@@ -1,0 +1,278 @@
+.class public final LX/1W0;
+.super Ljava/util/LinkedHashMap;
+.source ""
+
+
+# annotations
+.annotation system Ldalvik/annotation/Signature;
+    value = {
+        "Ljava/util/LinkedHashMap<",
+        "LX/1dJ;",
+        "Ljava/lang/Long;",
+        ">;"
+    }
+.end annotation
+
+
+# instance fields
+.field public final synthetic this$0:LX/1Vx;
+
+
+# direct methods
+.method public constructor <init>(LX/1Vx;)V
+    .registers 2
+
+    .line 0
+    iput-object p1, p0, LX/1W0;->this$0:LX/1Vx;
+
+    .line 2
+    invoke-direct {p0}, Ljava/util/LinkedHashMap;-><init>()V
+
+    .line 5
+    return-void
+.end method
+
+
+# virtual methods
+.method public final bridge containsKey(Ljava/lang/Object;)Z
+    .registers 3
+
+    .line 0
+    instance-of v0, p1, LX/1dJ;
+
+    .line 2
+    if-nez v0, :cond_6
+
+    .line 4
+    const/4 v0, 0x0
+
+    .line 5
+    return v0
+
+    .line 6
+    :cond_6
+    invoke-super {p0, p1}, Ljava/util/HashMap;->containsKey(Ljava/lang/Object;)Z
+
+    .line 9
+    move-result v0
+
+    .line 10
+    return v0
+.end method
+
+.method public final bridge containsValue(Ljava/lang/Object;)Z
+    .registers 3
+
+    .line 0
+    instance-of v0, p1, Ljava/lang/Long;
+
+    .line 2
+    if-nez v0, :cond_6
+
+    .line 4
+    const/4 v0, 0x0
+
+    .line 5
+    return v0
+
+    .line 6
+    :cond_6
+    invoke-super {p0, p1}, Ljava/util/LinkedHashMap;->containsValue(Ljava/lang/Object;)Z
+
+    .line 9
+    move-result v0
+
+    .line 10
+    return v0
+.end method
+
+.method public final bridge entrySet()Ljava/util/Set;
+    .registers 2
+
+    .line 0
+    invoke-super {p0}, Ljava/util/LinkedHashMap;->entrySet()Ljava/util/Set;
+
+    .line 3
+    move-result-object v0
+
+    .line 4
+    return-object v0
+.end method
+
+.method public final bridge synthetic get(Ljava/lang/Object;)Ljava/lang/Object;
+    .registers 3
+
+    .line 0
+    instance-of v0, p1, LX/1dJ;
+
+    .line 2
+    if-nez v0, :cond_6
+
+    .line 4
+    const/4 v0, 0x0
+
+    .line 5
+    return-object v0
+
+    .line 6
+    :cond_6
+    invoke-super {p0, p1}, Ljava/util/LinkedHashMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
+
+    .line 9
+    move-result-object v0
+
+    .line 10
+    return-object v0
+.end method
+
+.method public final bridge synthetic getOrDefault(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    .registers 4
+
+    .line 0
+    instance-of v0, p1, LX/1dJ;
+
+    .line 2
+    if-nez v0, :cond_5
+
+    .line 4
+    return-object p2
+
+    .line 5
+    :cond_5
+    invoke-super {p0, p1, p2}, Ljava/util/LinkedHashMap;->getOrDefault(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+
+    .line 8
+    move-result-object v0
+
+    .line 9
+    return-object v0
+.end method
+
+.method public final bridge keySet()Ljava/util/Set;
+    .registers 2
+
+    .line 0
+    invoke-super {p0}, Ljava/util/LinkedHashMap;->keySet()Ljava/util/Set;
+
+    .line 3
+    move-result-object v0
+
+    .line 4
+    return-object v0
+.end method
+
+.method public final bridge synthetic remove(Ljava/lang/Object;)Ljava/lang/Object;
+    .registers 3
+
+    .line 0
+    instance-of v0, p1, LX/1dJ;
+
+    .line 2
+    if-nez v0, :cond_6
+
+    .line 4
+    const/4 v0, 0x0
+
+    .line 5
+    return-object v0
+
+    .line 6
+    :cond_6
+    invoke-super {p0, p1}, Ljava/util/HashMap;->remove(Ljava/lang/Object;)Ljava/lang/Object;
+
+    .line 9
+    move-result-object v0
+
+    .line 10
+    return-object v0
+.end method
+
+.method public final bridge remove(Ljava/lang/Object;Ljava/lang/Object;)Z
+    .registers 5
+
+    .line 268435456
+    instance-of v0, p1, LX/1dJ;
+
+    .line 268435458
+    const/4 v1, 0x0
+
+    .line 268435459
+    if-eqz v0, :cond_e
+
+    .line 268435461
+    instance-of v0, p2, Ljava/lang/Long;
+
+    .line 268435463
+    if-eqz v0, :cond_e
+
+    .line 268435465
+    invoke-super {p0, p1, p2}, Ljava/util/LinkedHashMap;->remove(Ljava/lang/Object;Ljava/lang/Object;)Z
+
+    .line 268435468
+    move-result v0
+
+    .line 268435469
+    return v0
+
+    .line 268435470
+    :cond_e
+    return v1
+.end method
+
+.method public removeEldestEntry(Ljava/util/Map$Entry;)Z
+    .registers 8
+
+    .line 0
+    invoke-virtual {p0}, Ljava/util/AbstractMap;->size()I
+
+    .line 3
+    move-result v0
+
+    .line 4
+    int-to-long v4, v0
+
+    .line 5
+    const-wide/16 v2, 0xf0
+
+    .line 7
+    cmp-long v1, v4, v2
+
+    .line 9
+    const/4 v0, 0x0
+
+    .line 10
+    if-lez v1, :cond_d
+
+    .line 12
+    const/4 v0, 0x1
+
+    .line 13
+    :cond_d
+    return v0
+.end method
+
+.method public final bridge size()I
+    .registers 2
+
+    .line 0
+    invoke-super {p0}, Ljava/util/HashMap;->size()I
+
+    .line 3
+    move-result v0
+
+    .line 4
+    return v0
+.end method
+
+.method public final bridge values()Ljava/util/Collection;
+    .registers 2
+
+    .line 0
+    invoke-super {p0}, Ljava/util/LinkedHashMap;->values()Ljava/util/Collection;
+
+    .line 3
+    move-result-object v0
+
+    .line 4
+    return-object v0
+.end method

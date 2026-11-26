@@ -1,0 +1,72 @@
+.class public final LX/4x4;
+.super Ljava/lang/Object;
+.source ""
+
+# interfaces
+.implements LX/5Tr;
+
+
+# instance fields
+.field public final A00:I
+
+.field public final A01:Ljava/util/List;
+
+
+# direct methods
+.method public constructor <init>(Ljava/util/List;I)V
+    .registers 3
+
+    .line 0
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    .line 3
+    iput-object p1, p0, LX/4x4;->A01:Ljava/util/List;
+
+    .line 5
+    iput p2, p0, LX/4x4;->A00:I
+
+    .line 7
+    return-void
+.end method
+
+
+# virtual methods
+.method public synthetic Bhs()Z
+    .registers 2
+
+    .line 0
+    const/4 v0, 0x0
+
+    .line 1
+    return v0
+.end method
+
+.method public synthetic BoB()Z
+    .registers 2
+
+    .line 0
+    const/4 v0, 0x0
+
+    .line 1
+    return v0
+.end method
+
+.method public getContact()LX/0xl;
+    .registers 2
+
+    .line 0
+    const/4 v0, 0x0
+
+    .line 1
+    return-object v0
+.end method
+
+.method public getWamUJSection()I
+    .registers 2
+
+    .line 0
+    const/4 v0, 0x4
+
+    .line 1
+    return v0
+.end method

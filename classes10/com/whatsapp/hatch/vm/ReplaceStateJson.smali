@@ -1,0 +1,125 @@
+.class public final Lcom/whatsapp/hatch/vm/ReplaceStateJson;
+.super Ljava/lang/Object;
+.source ""
+
+
+# annotations
+.annotation runtime Lkotlinx/serialization/Serializable;
+.end annotation
+
+
+# instance fields
+.field public final A00:Ljava/lang/Boolean;
+
+.field public final A01:Ljava/lang/String;
+
+.field public final A02:Ljava/lang/String;
+
+.field public final A03:Ljava/lang/String;
+
+
+# direct methods
+.method public constructor <init>()V
+    .registers 2
+
+    .line 268435456
+    const/4 v0, 0x0
+
+    .line 268435457
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    .line 268435460
+    iput-object v0, p0, Lcom/whatsapp/hatch/vm/ReplaceStateJson;->A03:Ljava/lang/String;
+
+    .line 268435462
+    iput-object v0, p0, Lcom/whatsapp/hatch/vm/ReplaceStateJson;->A01:Ljava/lang/String;
+
+    .line 268435464
+    iput-object v0, p0, Lcom/whatsapp/hatch/vm/ReplaceStateJson;->A02:Ljava/lang/String;
+
+    .line 268435466
+    iput-object v0, p0, Lcom/whatsapp/hatch/vm/ReplaceStateJson;->A00:Ljava/lang/Boolean;
+
+    .line 268435468
+    return-void
+.end method
+
+.method public synthetic constructor <init>(Ljava/lang/Boolean;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;I)V
+    .registers 8
+
+    .line 0
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    .line 3
+    and-int/lit8 v0, p5, 0x1
+
+    .line 5
+    const/4 v1, 0x0
+
+    .line 6
+    if-nez v0, :cond_23
+
+    .line 8
+    iput-object v1, p0, Lcom/whatsapp/hatch/vm/ReplaceStateJson;->A03:Ljava/lang/String;
+
+    .line 10
+    :goto_a
+    and-int/lit8 v0, p5, 0x2
+
+    .line 12
+    if-nez v0, :cond_20
+
+    .line 14
+    iput-object v1, p0, Lcom/whatsapp/hatch/vm/ReplaceStateJson;->A01:Ljava/lang/String;
+
+    .line 16
+    :goto_10
+    and-int/lit8 v0, p5, 0x4
+
+    .line 18
+    if-nez v0, :cond_1d
+
+    .line 20
+    iput-object v1, p0, Lcom/whatsapp/hatch/vm/ReplaceStateJson;->A02:Ljava/lang/String;
+
+    .line 22
+    :goto_16
+    and-int/lit8 v0, p5, 0x8
+
+    .line 24
+    if-nez v0, :cond_26
+
+    .line 26
+    iput-object v1, p0, Lcom/whatsapp/hatch/vm/ReplaceStateJson;->A00:Ljava/lang/Boolean;
+
+    .line 28
+    return-void
+
+    .line 29
+    :cond_1d
+    iput-object p4, p0, Lcom/whatsapp/hatch/vm/ReplaceStateJson;->A02:Ljava/lang/String;
+
+    .line 31
+    goto :goto_16
+
+    .line 32
+    :cond_20
+    iput-object p3, p0, Lcom/whatsapp/hatch/vm/ReplaceStateJson;->A01:Ljava/lang/String;
+
+    .line 34
+    goto :goto_10
+
+    .line 35
+    :cond_23
+    iput-object p2, p0, Lcom/whatsapp/hatch/vm/ReplaceStateJson;->A03:Ljava/lang/String;
+
+    .line 37
+    goto :goto_a
+
+    .line 38
+    :cond_26
+    iput-object p1, p0, Lcom/whatsapp/hatch/vm/ReplaceStateJson;->A00:Ljava/lang/Boolean;
+
+    .line 40
+    return-void
+.end method

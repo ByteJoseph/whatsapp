@@ -1,0 +1,59 @@
+.class public final LX/Kc0;
+.super LX/05U;
+.source ""
+
+# interfaces
+.implements LX/0AZ;
+
+
+# static fields
+.field public static final A00:LX/Kc0;
+
+
+# direct methods
+.method public static constructor <clinit>()V
+    .registers 1
+
+    .line 0
+    new-instance v0, LX/Kc0;
+
+    .line 2
+    invoke-direct {v0}, LX/Kc0;-><init>()V
+
+    .line 5
+    sput-object v0, LX/Kc0;->A00:LX/Kc0;
+
+    .line 7
+    return-void
+.end method
+
+.method public constructor <init>()V
+    .registers 2
+
+    .line 0
+    const/4 v0, 0x2
+
+    .line 1
+    invoke-direct {p0, v0}, LX/05U;-><init>(I)V
+
+    .line 4
+    return-void
+.end method
+
+
+# virtual methods
+.method public bridge synthetic invoke(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    .registers 4
+
+    .line 0
+    const-string v0, "merge function called on unmergeable property IsPopup. A popup should not be a child of a clickable/focusable node."
+
+    .line 2
+    invoke-static {v0}, LX/2Ac;->A0v(Ljava/lang/String;)Ljava/lang/IllegalStateException;
+
+    .line 5
+    move-result-object v0
+
+    .line 6
+    throw v0
+.end method

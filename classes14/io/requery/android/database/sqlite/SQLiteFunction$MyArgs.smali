@@ -1,0 +1,21 @@
+.class public Lio/requery/android/database/sqlite/SQLiteFunction$MyArgs;
+.super Ljava/lang/Object;
+.source ""
+
+
+# instance fields
+.field public argsCount:I
+
+.field public argsPtr:J
+
+
+# direct methods
+.method public constructor <init>()V
+    .registers 1
+
+    .line 0
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    .line 3
+    return-void
+.end method

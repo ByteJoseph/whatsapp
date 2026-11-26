@@ -1,0 +1,37 @@
+.class public abstract LX/OSu;
+.super Ljava/lang/Object;
+.source ""
+
+
+# static fields
+.field public static final A00:Landroid/content/Intent;
+
+
+# direct methods
+.method public static constructor <clinit>()V
+    .registers 2
+
+    .line 0
+    const-string v0, "com.google.android.play.core.expressintegrityservice.BIND_EXPRESS_INTEGRITY_SERVICE"
+
+    .line 2
+    invoke-static {v0}, LX/Ksk;->A0O(Ljava/lang/String;)Landroid/content/Intent;
+
+    .line 5
+    move-result-object v1
+
+    .line 6
+    const-string v0, "com.android.vending"
+
+    .line 8
+    invoke-virtual {v1, v0}, Landroid/content/Intent;->setPackage(Ljava/lang/String;)Landroid/content/Intent;
+
+    .line 11
+    move-result-object v0
+
+    .line 12
+    sput-object v0, LX/OSu;->A00:Landroid/content/Intent;
+
+    .line 14
+    return-void
+.end method

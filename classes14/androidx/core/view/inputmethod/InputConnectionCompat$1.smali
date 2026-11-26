@@ -1,0 +1,62 @@
+.class public Landroidx/core/view/inputmethod/InputConnectionCompat$1;
+.super Landroid/view/inputmethod/InputConnectionWrapper;
+.source ""
+
+
+# instance fields
+.field public final synthetic val$listener:Landroidx/core/view/inputmethod/InputConnectionCompat$OnCommitContentListener;
+
+
+# direct methods
+.method public constructor <init>(Landroid/view/inputmethod/InputConnection;ZLandroidx/core/view/inputmethod/InputConnectionCompat$OnCommitContentListener;)V
+    .registers 4
+
+    .line 0
+    iput-object p3, p0, Landroidx/core/view/inputmethod/InputConnectionCompat$1;->val$listener:Landroidx/core/view/inputmethod/InputConnectionCompat$OnCommitContentListener;
+
+    .line 2
+    invoke-direct {p0, p1, p2}, Landroid/view/inputmethod/InputConnectionWrapper;-><init>(Landroid/view/inputmethod/InputConnection;Z)V
+
+    .line 5
+    return-void
+.end method
+
+
+# virtual methods
+.method public commitContent(Landroid/view/inputmethod/InputContentInfo;ILandroid/os/Bundle;)Z
+    .registers 6
+
+    .line 0
+    iget-object v1, p0, Landroidx/core/view/inputmethod/InputConnectionCompat$1;->val$listener:Landroidx/core/view/inputmethod/InputConnectionCompat$OnCommitContentListener;
+
+    .line 2
+    invoke-static {p1}, Landroidx/core/view/inputmethod/InputContentInfoCompat;->wrap(Ljava/lang/Object;)Landroidx/core/view/inputmethod/InputContentInfoCompat;
+
+    .line 5
+    move-result-object v0
+
+    .line 6
+    invoke-interface {v1, v0, p2, p3}, Landroidx/core/view/inputmethod/InputConnectionCompat$OnCommitContentListener;->onCommitContent(Landroidx/core/view/inputmethod/InputContentInfoCompat;ILandroid/os/Bundle;)Z
+
+    .line 9
+    move-result v0
+
+    .line 10
+    if-eqz v0, :cond_e
+
+    .line 12
+    const/4 v0, 0x1
+
+    .line 13
+    return v0
+
+    .line 14
+    :cond_e
+    invoke-super {p0, p1, p2, p3}, Landroid/view/inputmethod/InputConnectionWrapper;->commitContent(Landroid/view/inputmethod/InputContentInfo;ILandroid/os/Bundle;)Z
+
+    .line 17
+    move-result v0
+
+    .line 18
+    return v0
+.end method

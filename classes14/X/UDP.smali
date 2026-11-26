@@ -1,0 +1,308 @@
+.class public final enum LX/UDP;
+.super Ljava/lang/Enum;
+.source ""
+
+# interfaces
+.implements LX/VPW;
+
+
+# static fields
+.field public static final A00:LX/UlT;
+
+.field public static final synthetic A01:LX/06C;
+
+.field public static final synthetic A02:[LX/UDP;
+
+.field public static final enum A03:LX/UDP;
+
+.field public static final enum A04:LX/UDP;
+
+.field public static final enum A05:LX/UDP;
+
+.field public static final enum A06:LX/UDP;
+
+.field public static final enum A07:LX/UDP;
+
+.field public static final enum A08:LX/UDP;
+
+.field public static final enum A09:LX/UDP;
+
+.field public static final enum A0A:LX/UDP;
+
+.field public static final enum A0B:LX/UDP;
+
+.field public static final enum A0C:LX/UDP;
+
+
+# instance fields
+.field public final value:I
+
+
+# direct methods
+.method public static constructor <clinit>()V
+    .registers 13
+
+    .line 0
+    const-string v1, "BB_PRO_ACTIVE"
+
+    .line 2
+    const/4 v0, 0x0
+
+    .line 3
+    const/4 v2, 0x1
+
+    .line 4
+    new-instance v12, LX/UDP;
+
+    .line 6
+    invoke-direct {v12, v1, v0, v2}, LX/UDP;-><init>(Ljava/lang/String;II)V
+
+    .line 9
+    sput-object v12, LX/UDP;->A03:LX/UDP;
+
+    .line 11
+    const-string v0, "BB_PRO_COMPLETED"
+
+    .line 13
+    const/4 v1, 0x2
+
+    .line 14
+    new-instance v11, LX/UDP;
+
+    .line 16
+    invoke-direct {v11, v0, v2, v1}, LX/UDP;-><init>(Ljava/lang/String;II)V
+
+    .line 19
+    sput-object v11, LX/UDP;->A04:LX/UDP;
+
+    .line 21
+    const-string v0, "BB_PRO_IN_DRAFT"
+
+    .line 23
+    const/4 v2, 0x3
+
+    .line 24
+    new-instance v10, LX/UDP;
+
+    .line 26
+    invoke-direct {v10, v0, v1, v2}, LX/UDP;-><init>(Ljava/lang/String;II)V
+
+    .line 29
+    sput-object v10, LX/UDP;->A05:LX/UDP;
+
+    .line 31
+    const-string v0, "BB_PRO_IN_REVIEW"
+
+    .line 33
+    const/4 v1, 0x4
+
+    .line 34
+    new-instance v9, LX/UDP;
+
+    .line 36
+    invoke-direct {v9, v0, v2, v1}, LX/UDP;-><init>(Ljava/lang/String;II)V
+
+    .line 39
+    sput-object v9, LX/UDP;->A06:LX/UDP;
+
+    .line 41
+    const-string v0, "BB_PRO_NOT_SENDING"
+
+    .line 43
+    const/4 v2, 0x5
+
+    .line 44
+    new-instance v8, LX/UDP;
+
+    .line 46
+    invoke-direct {v8, v0, v1, v2}, LX/UDP;-><init>(Ljava/lang/String;II)V
+
+    .line 49
+    sput-object v8, LX/UDP;->A07:LX/UDP;
+
+    .line 51
+    const-string v0, "BB_PRO_OFF"
+
+    .line 53
+    const/4 v1, 0x6
+
+    .line 54
+    new-instance v7, LX/UDP;
+
+    .line 56
+    invoke-direct {v7, v0, v2, v1}, LX/UDP;-><init>(Ljava/lang/String;II)V
+
+    .line 59
+    sput-object v7, LX/UDP;->A08:LX/UDP;
+
+    .line 61
+    const-string v0, "BB_PRO_REJECTED"
+
+    .line 63
+    const/4 v2, 0x7
+
+    .line 64
+    new-instance v6, LX/UDP;
+
+    .line 66
+    invoke-direct {v6, v0, v1, v2}, LX/UDP;-><init>(Ljava/lang/String;II)V
+
+    .line 69
+    sput-object v6, LX/UDP;->A0A:LX/UDP;
+
+    .line 71
+    const-string v0, "BB_PRO_SCHEDULED"
+
+    .line 73
+    const/16 v1, 0x8
+
+    .line 75
+    new-instance v5, LX/UDP;
+
+    .line 77
+    invoke-direct {v5, v0, v2, v1}, LX/UDP;-><init>(Ljava/lang/String;II)V
+
+    .line 80
+    sput-object v5, LX/UDP;->A0B:LX/UDP;
+
+    .line 82
+    const-string v0, "BB_PRO_SENDING_LIMITED"
+
+    .line 84
+    const/16 v4, 0x9
+
+    .line 86
+    new-instance v3, LX/UDP;
+
+    .line 88
+    invoke-direct {v3, v0, v1, v4}, LX/UDP;-><init>(Ljava/lang/String;II)V
+
+    .line 91
+    sput-object v3, LX/UDP;->A0C:LX/UDP;
+
+    .line 93
+    const-string v2, "BB_PRO_PROCESSING"
+
+    .line 95
+    const/16 v0, 0xa
+
+    .line 97
+    new-instance v1, LX/UDP;
+
+    .line 99
+    invoke-direct {v1, v2, v4, v0}, LX/UDP;-><init>(Ljava/lang/String;II)V
+
+    .line 102
+    sput-object v1, LX/UDP;->A09:LX/UDP;
+
+    .line 104
+    new-array v0, v0, [LX/UDP;
+
+    .line 106
+    invoke-static {v12, v11, v10, v9, v0}, LX/2Ag;->A1P(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;[Ljava/lang/Object;)V
+
+    .line 109
+    invoke-static {v8, v7, v6, v5, v0}, LX/5UQ;->A0l(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;[Ljava/lang/Object;)V
+
+    .line 112
+    invoke-static {v3, v1, v0}, LX/5UL;->A1N(Ljava/lang/Object;Ljava/lang/Object;[Ljava/lang/Object;)V
+
+    .line 115
+    sput-object v0, LX/UDP;->A02:[LX/UDP;
+
+    .line 117
+    invoke-static {v0}, LX/069;->A00([Ljava/lang/Enum;)LX/06D;
+
+    .line 120
+    move-result-object v0
+
+    .line 121
+    sput-object v0, LX/UDP;->A01:LX/06C;
+
+    .line 123
+    const-class v0, LX/UDP;
+
+    .line 125
+    invoke-static {v0}, LX/2Ag;->A15(Ljava/lang/Class;)LX/0Ah;
+
+    .line 128
+    move-result-object v2
+
+    .line 129
+    sget-object v1, LX/02Y;->A00:Ljava/lang/Integer;
+
+    .line 131
+    new-instance v0, LX/TyK;
+
+    .line 133
+    invoke-direct {v0, v1, v2}, LX/TyK;-><init>(Ljava/lang/Integer;LX/0Af;)V
+
+    .line 136
+    sput-object v0, LX/UDP;->A00:LX/UlT;
+
+    .line 138
+    return-void
+.end method
+
+.method public constructor <init>(Ljava/lang/String;II)V
+    .registers 4
+
+    .line 0
+    invoke-direct {p0, p1, p2}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
+
+    .line 3
+    iput p3, p0, LX/UDP;->value:I
+
+    .line 5
+    return-void
+.end method
+
+.method public static valueOf(Ljava/lang/String;)LX/UDP;
+    .registers 2
+
+    .line 0
+    const-class v0, LX/UDP;
+
+    .line 2
+    invoke-static {v0, p0}, Ljava/lang/Enum;->valueOf(Ljava/lang/Class;Ljava/lang/String;)Ljava/lang/Enum;
+
+    .line 5
+    move-result-object v0
+
+    .line 6
+    check-cast v0, LX/UDP;
+
+    .line 8
+    return-object v0
+.end method
+
+.method public static values()[LX/UDP;
+    .registers 1
+
+    .line 0
+    sget-object v0, LX/UDP;->A02:[LX/UDP;
+
+    .line 2
+    invoke-virtual {v0}, Ljava/lang/Object;->clone()Ljava/lang/Object;
+
+    .line 5
+    move-result-object v0
+
+    .line 6
+    check-cast v0, [LX/UDP;
+
+    .line 8
+    return-object v0
+.end method
+
+
+# virtual methods
+.method public getValue()I
+    .registers 2
+
+    .line 0
+    iget v0, p0, LX/UDP;->value:I
+
+    .line 2
+    return v0
+.end method

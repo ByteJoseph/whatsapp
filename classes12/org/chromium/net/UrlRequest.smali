@@ -1,0 +1,51 @@
+.class public abstract Lorg/chromium/net/UrlRequest;
+.super Ljava/lang/Object;
+.source ""
+
+
+# direct methods
+.method public constructor <init>()V
+    .registers 1
+
+    .line 0
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    .line 3
+    return-void
+.end method
+
+
+# virtual methods
+.method public abstract cancel()V
+.end method
+
+.method public abstract followRedirect()V
+.end method
+
+.method public abstract getStatus(Lorg/chromium/net/UrlRequest$StatusListener;)V
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x10
+        }
+        names = {
+            "listener"
+        }
+    .end annotation
+.end method
+
+.method public abstract isDone()Z
+.end method
+
+.method public abstract read(Ljava/nio/ByteBuffer;)V
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "buffer"
+        }
+    .end annotation
+.end method
+
+.method public abstract start()V
+.end method

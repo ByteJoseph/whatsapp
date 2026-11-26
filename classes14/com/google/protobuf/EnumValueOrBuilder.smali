@@ -1,0 +1,34 @@
+.class public interface abstract Lcom/google/protobuf/EnumValueOrBuilder;
+.super Ljava/lang/Object;
+.source ""
+
+# interfaces
+.implements Lcom/google/protobuf/MessageLiteOrBuilder;
+
+
+# virtual methods
+.method public abstract getName()Ljava/lang/String;
+.end method
+
+.method public abstract getNameBytes()Lcom/google/protobuf/ByteString;
+.end method
+
+.method public abstract getNumber()I
+.end method
+
+.method public abstract getOptions(I)Lcom/google/protobuf/Option;
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0
+        }
+        names = {
+            "index"
+        }
+    .end annotation
+.end method
+
+.method public abstract getOptionsCount()I
+.end method
+
+.method public abstract getOptionsList()Ljava/util/List;
+.end method

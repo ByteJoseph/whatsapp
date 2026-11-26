@@ -1,0 +1,41 @@
+.class public abstract LX/MGd;
+.super Ljava/lang/Object;
+.source ""
+
+
+# direct methods
+.method public static A00(Landroid/app/Notification$BigPictureStyle;)V
+    .registers 2
+
+    .line 0
+    const/4 v0, 0x0
+
+    .line 1
+    invoke-virtual {p0, v0}, Landroid/app/Notification$BigPictureStyle;->setContentDescription(Ljava/lang/CharSequence;)Landroid/app/Notification$BigPictureStyle;
+
+    .line 4
+    return-void
+.end method
+
+.method public static A01(Landroid/app/Notification$BigPictureStyle;)V
+    .registers 2
+
+    .line 0
+    const/4 v0, 0x0
+
+    .line 1
+    invoke-virtual {p0, v0}, Landroid/app/Notification$BigPictureStyle;->showBigPictureWhenCollapsed(Z)Landroid/app/Notification$BigPictureStyle;
+
+    .line 4
+    return-void
+.end method
+
+.method public static A02(Landroid/app/Notification$BigPictureStyle;Landroid/graphics/drawable/Icon;)V
+    .registers 2
+
+    .line 0
+    invoke-virtual {p0, p1}, Landroid/app/Notification$BigPictureStyle;->bigPicture(Landroid/graphics/drawable/Icon;)Landroid/app/Notification$BigPictureStyle;
+
+    .line 3
+    return-void
+.end method

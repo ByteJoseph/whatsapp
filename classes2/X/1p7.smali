@@ -1,0 +1,27 @@
+.class public final LX/1p7;
+.super Ljava/lang/Object;
+.source ""
+
+
+# instance fields
+.field public final A00:I
+
+.field public final A01:LX/1p3;
+
+
+# direct methods
+.method public constructor <init>(LX/1p3;I)V
+    .registers 3
+
+    .line 0
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    .line 3
+    iput p2, p0, LX/1p7;->A00:I
+
+    .line 5
+    iput-object p1, p0, LX/1p7;->A01:LX/1p3;
+
+    .line 7
+    return-void
+.end method

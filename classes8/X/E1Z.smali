@@ -1,0 +1,50 @@
+.class public final LX/E1Z;
+.super Ljava/lang/Object;
+.source ""
+
+
+# instance fields
+.field public final A00:LX/05b;
+
+.field public final A01:LX/05b;
+
+.field public final A02:LX/05b;
+
+
+# direct methods
+.method public constructor <init>()V
+    .registers 2
+
+    .line 0
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    .line 3
+    invoke-static {}, LX/8cV;->A0H()LX/05b;
+
+    .line 6
+    move-result-object v0
+
+    .line 7
+    iput-object v0, p0, LX/E1Z;->A02:LX/05b;
+
+    .line 9
+    invoke-static {}, LX/CyR;->A0M()LX/05b;
+
+    .line 12
+    move-result-object v0
+
+    .line 13
+    iput-object v0, p0, LX/E1Z;->A01:LX/05b;
+
+    .line 15
+    invoke-static {}, LX/CyR;->A0W()LX/05b;
+
+    .line 18
+    move-result-object v0
+
+    .line 19
+    iput-object v0, p0, LX/E1Z;->A00:LX/05b;
+
+    .line 21
+    return-void
+.end method

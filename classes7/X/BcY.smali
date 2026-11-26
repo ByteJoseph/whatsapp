@@ -1,0 +1,122 @@
+.class public final LX/BcY;
+.super Lcom/whatsapp/ui/wds/components/button/WDSButton;
+.source ""
+
+# interfaces
+.implements LX/Cui;
+
+
+# instance fields
+.field public final A00:Landroid/content/Context;
+
+.field public final A01:LX/1aw;
+
+.field public final A02:LX/4qB;
+
+
+# direct methods
+.method public constructor <init>(Landroid/content/Context;LX/1aw;)V
+    .registers 5
+
+    .line 0
+    const/4 v0, 0x0
+
+    .line 1
+    invoke-direct {p0, p1, v0}, Lcom/whatsapp/ui/wds/components/button/WDSButton;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
+
+    .line 4
+    iput-object p1, p0, LX/BcY;->A00:Landroid/content/Context;
+
+    .line 6
+    iput-object p2, p0, LX/BcY;->A01:LX/1aw;
+
+    .line 8
+    const/16 v0, 0xfe1
+
+    .line 10
+    invoke-static {v0}, LX/00U;->A03(I)Ljava/lang/Object;
+
+    .line 13
+    move-result-object v0
+
+    .line 14
+    check-cast v0, LX/4qB;
+
+    .line 16
+    iput-object v0, p0, LX/BcY;->A02:LX/4qB;
+
+    .line 18
+    invoke-static {p0}, LX/AqW;->A1N(Lcom/whatsapp/ui/wds/components/button/WDSButton;)V
+
+    .line 21
+    const v0, 0x7f120277
+
+    .line 24
+    invoke-virtual {p0, v0}, Landroid/widget/TextView;->setText(I)V
+
+    .line 27
+    const v0, 0x7f080f5e
+
+    .line 30
+    invoke-virtual {p0, v0}, Lcom/whatsapp/ui/wds/components/button/WDSButton;->setIcon(I)V
+
+    .line 33
+    const/16 v0, 0xb
+
+    .line 35
+    invoke-static {p0, v0}, LX/CKF;->A00(Ljava/lang/Object;I)LX/CKF;
+
+    .line 38
+    move-result-object v1
+
+    .line 39
+    const v0, 0x1ca41d95
+
+    .line 42
+    invoke-static {p0, v1, v0}, Lcom/whatsapp/infra/logging/UXLog;->setOnClickListener(Ljava/lang/Object;Landroid/view/View$OnClickListener;I)V
+
+    .line 45
+    return-void
+.end method
+
+
+# virtual methods
+.method public synthetic AB6(Landroid/widget/LinearLayout$LayoutParams;)V
+    .registers 2
+
+    .line 0
+    return-void
+.end method
+
+.method public synthetic AWi()Z
+    .registers 2
+
+    .line 0
+    const/4 v0, 0x0
+
+    .line 1
+    return v0
+.end method
+
+.method public synthetic By0()Z
+    .registers 2
+
+    .line 0
+    const/4 v0, 0x1
+
+    .line 1
+    return v0
+.end method
+
+.method public getCTAViews()Ljava/util/List;
+    .registers 2
+
+    .line 0
+    invoke-static {p0}, LX/2Ad;->A1Q(Ljava/lang/Object;)Ljava/util/List;
+
+    .line 3
+    move-result-object v0
+
+    .line 4
+    return-object v0
+.end method

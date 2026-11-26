@@ -1,0 +1,87 @@
+.class public LX/AZd;
+.super Ljava/lang/Object;
+.source ""
+
+# interfaces
+.implements LX/00n;
+.implements Lkotlin/jvm/functions/Function0;
+
+
+# instance fields
+.field public final $t:I
+
+.field public final A00:I
+
+.field public final A01:I
+
+.field public final A02:Ljava/lang/Object;
+
+.field public final A03:Ljava/lang/Object;
+
+.field public final A04:Z
+
+
+# direct methods
+.method public constructor <init>(LX/8wO;Lcom/whatsapp/expressions/ui/app/tray/stickergrid/viewholder/StickerViewHolder;IIIZ)V
+    .registers 7
+
+    .line 0
+    iput p5, p0, LX/AZd;->$t:I
+
+    .line 2
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    .line 5
+    iput-object p2, p0, LX/AZd;->A02:Ljava/lang/Object;
+
+    .line 7
+    iput-object p1, p0, LX/AZd;->A03:Ljava/lang/Object;
+
+    .line 9
+    iput p3, p0, LX/AZd;->A00:I
+
+    .line 11
+    iput p4, p0, LX/AZd;->A01:I
+
+    .line 13
+    iput-boolean p6, p0, LX/AZd;->A04:Z
+
+    .line 15
+    return-void
+.end method
+
+
+# virtual methods
+.method public final invoke()Ljava/lang/Object;
+    .registers 6
+
+    .line 0
+    iget-object v4, p0, LX/AZd;->A02:Ljava/lang/Object;
+
+    .line 2
+    check-cast v4, Lcom/whatsapp/expressions/ui/app/tray/stickergrid/viewholder/StickerViewHolder;
+
+    .line 4
+    iget-object v3, p0, LX/AZd;->A03:Ljava/lang/Object;
+
+    .line 6
+    check-cast v3, LX/8wO;
+
+    .line 8
+    iget v2, p0, LX/AZd;->A00:I
+
+    .line 10
+    iget v1, p0, LX/AZd;->A01:I
+
+    .line 12
+    iget-boolean v0, p0, LX/AZd;->A04:Z
+
+    .line 14
+    invoke-static {v3, v4, v2, v1, v0}, Lcom/whatsapp/expressions/ui/app/tray/stickergrid/viewholder/StickerViewHolder;->A02(LX/8wO;Lcom/whatsapp/expressions/ui/app/tray/stickergrid/viewholder/StickerViewHolder;IIZ)V
+
+    .line 17
+    sget-object v0, LX/05v;->A00:LX/05v;
+
+    .line 19
+    return-object v0
+.end method

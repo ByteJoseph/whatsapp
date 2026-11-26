@@ -1,0 +1,78 @@
+.class public final LX/JLZ;
+.super Ljava/lang/Object;
+.source ""
+
+
+# instance fields
+.field public final A00:LX/Jd0;
+
+.field public final A01:LX/Jd0;
+
+
+# direct methods
+.method public constructor <init>()V
+    .registers 4
+
+    .line 0
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    .line 3
+    const/4 v2, 0x1
+
+    .line 4
+    sget-object v1, LX/02Y;->A01:Ljava/lang/Integer;
+
+    .line 6
+    new-instance v0, LX/Jd0;
+
+    .line 8
+    invoke-direct {v0, v1, v2}, LX/Jd0;-><init>(Ljava/lang/Integer;Z)V
+
+    .line 11
+    iput-object v0, p0, LX/JLZ;->A00:LX/Jd0;
+
+    .line 13
+    new-instance v0, LX/Jd0;
+
+    .line 15
+    invoke-direct {v0, v1, v2}, LX/Jd0;-><init>(Ljava/lang/Integer;Z)V
+
+    .line 18
+    iput-object v0, p0, LX/JLZ;->A01:LX/Jd0;
+
+    .line 20
+    return-void
+.end method
+
+
+# virtual methods
+.method public final A00(JJ)V
+    .registers 7
+
+    .line 0
+    iget-object v1, p0, LX/JLZ;->A00:LX/Jd0;
+
+    .line 2
+    invoke-static {p3, p4}, LX/CyT;->A00(J)F
+
+    .line 5
+    move-result v0
+
+    .line 6
+    invoke-virtual {v1, p1, p2, v0}, LX/Jd0;->A01(JF)V
+
+    .line 9
+    iget-object v1, p0, LX/JLZ;->A01:LX/Jd0;
+
+    .line 11
+    invoke-static {p3, p4}, LX/I76;->A01(J)F
+
+    .line 14
+    move-result v0
+
+    .line 15
+    invoke-virtual {v1, p1, p2, v0}, LX/Jd0;->A01(JF)V
+
+    .line 18
+    return-void
+.end method

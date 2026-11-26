@@ -1,0 +1,42 @@
+.class public final LX/9EQ;
+.super Lcom/whatsapp/ui/coreui/WaDynamicRoundCornerImageView;
+.source ""
+
+
+# virtual methods
+.method public onMeasure(II)V
+    .registers 8
+
+    .line 0
+    invoke-virtual {p0}, Landroid/view/View;->getSuggestedMinimumWidth()I
+
+    .line 3
+    move-result v0
+
+    .line 4
+    invoke-static {v0, p1}, Landroid/view/View;->getDefaultSize(II)I
+
+    .line 7
+    move-result v4
+
+    .line 8
+    int-to-float v0, v4
+
+    .line 9
+    float-to-double v2, v0
+
+    .line 10
+    const-wide/high16 v0, 0x3ff8000000000000L  # 1.5
+
+    .line 12
+    mul-double/2addr v2, v0
+
+    .line 13
+    double-to-int v0, v2
+
+    .line 14
+    invoke-virtual {p0, v4, v0}, Landroid/view/View;->setMeasuredDimension(II)V
+
+    .line 17
+    return-void
+.end method

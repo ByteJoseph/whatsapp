@@ -1,0 +1,59 @@
+.class public final synthetic LX/1rQ;
+.super Ljava/lang/Object;
+.source ""
+
+# interfaces
+.implements Ljava/lang/Runnable;
+
+
+# instance fields
+.field public final synthetic A00:Landroid/content/SharedPreferences$OnSharedPreferenceChangeListener;
+
+.field public final synthetic A01:LX/09Y;
+
+.field public final synthetic A02:Ljava/lang/String;
+
+
+# direct methods
+.method public synthetic constructor <init>(Landroid/content/SharedPreferences$OnSharedPreferenceChangeListener;LX/09Y;Ljava/lang/String;)V
+    .registers 4
+
+    .line 0
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    .line 3
+    iput-object p2, p0, LX/1rQ;->A01:LX/09Y;
+
+    .line 5
+    iput-object p1, p0, LX/1rQ;->A00:Landroid/content/SharedPreferences$OnSharedPreferenceChangeListener;
+
+    .line 7
+    iput-object p3, p0, LX/1rQ;->A02:Ljava/lang/String;
+
+    .line 9
+    return-void
+.end method
+
+
+# virtual methods
+.method public final run()V
+    .registers 4
+
+    .line 0
+    iget-object v0, p0, LX/1rQ;->A01:LX/09Y;
+
+    .line 2
+    iget-object v2, p0, LX/1rQ;->A00:Landroid/content/SharedPreferences$OnSharedPreferenceChangeListener;
+
+    .line 4
+    iget-object v1, p0, LX/1rQ;->A02:Ljava/lang/String;
+
+    .line 6
+    iget-object v0, v0, LX/09Y;->A03:LX/099;
+
+    .line 8
+    invoke-interface {v2, v0, v1}, Landroid/content/SharedPreferences$OnSharedPreferenceChangeListener;->onSharedPreferenceChanged(Landroid/content/SharedPreferences;Ljava/lang/String;)V
+
+    .line 11
+    return-void
+.end method

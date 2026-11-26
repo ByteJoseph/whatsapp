@@ -1,0 +1,293 @@
+.class public final LX/ALR;
+.super Ljava/lang/Object;
+.source ""
+
+# interfaces
+.implements LX/AoU;
+
+
+# instance fields
+.field public A00:LX/9sX;
+
+.field public A01:LX/9hA;
+
+.field public final A02:Lcom/whatsapp/mediacomposer/doodle/titlebar/plugin/ToolType;
+
+.field public final A03:LX/9kK;
+
+.field public final A04:Lkotlin/jvm/functions/Function0;
+
+
+# direct methods
+.method public constructor <init>(LX/9kK;Lkotlin/jvm/functions/Function0;)V
+    .registers 4
+
+    .line 0
+    const/4 v0, 0x1
+
+    .line 1
+    invoke-static {p2, v0}, LX/00m;->A09(Ljava/lang/Object;I)V
+
+    .line 4
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    .line 7
+    iput-object p1, p0, LX/ALR;->A03:LX/9kK;
+
+    .line 9
+    iput-object p2, p0, LX/ALR;->A04:Lkotlin/jvm/functions/Function0;
+
+    .line 11
+    sget-object v0, Lcom/whatsapp/mediacomposer/doodle/titlebar/plugin/ToolType;->CROP:Lcom/whatsapp/mediacomposer/doodle/titlebar/plugin/ToolType;
+
+    .line 13
+    iput-object v0, p0, LX/ALR;->A02:Lcom/whatsapp/mediacomposer/doodle/titlebar/plugin/ToolType;
+
+    .line 15
+    return-void
+.end method
+
+.method public static final A00(LX/ALR;)V
+    .registers 3
+
+    .line 0
+    iget-object v0, p0, LX/ALR;->A01:LX/9hA;
+
+    .line 2
+    if-eqz v0, :cond_13
+
+    .line 4
+    iget-object v0, v0, LX/9hA;->A00:LX/AK1;
+
+    .line 6
+    iget-object v0, v0, LX/AK1;->A0O:LX/9Ub;
+
+    .line 8
+    if-eqz v0, :cond_13
+
+    .line 10
+    sget-object v1, LX/9JF;->A07:LX/9JF;
+
+    .line 12
+    iget-object v0, v0, LX/9Ub;->A00:LX/AK1;
+
+    .line 14
+    iget-object v0, v0, LX/AK1;->A0U:LX/8jU;
+
+    .line 16
+    invoke-virtual {v0, v1}, LX/8jU;->A16(LX/9JF;)V
+
+    .line 19
+    :cond_13
+    iget-object v0, p0, LX/ALR;->A01:LX/9hA;
+
+    .line 21
+    if-eqz v0, :cond_22
+
+    .line 23
+    iget-object v0, v0, LX/9hA;->A00:LX/AK1;
+
+    .line 25
+    iget-object v1, v0, LX/AK1;->A0N:LX/9Ua;
+
+    .line 27
+    if-eqz v1, :cond_22
+
+    .line 29
+    sget-object v0, LX/02Y;->A01:Ljava/lang/Integer;
+
+    .line 31
+    invoke-static {v1, v0}, LX/AK1;->A01(LX/9Ua;Ljava/lang/Integer;)V
+
+    .line 34
+    :cond_22
+    return-void
+.end method
+
+
+# virtual methods
+.method public BOo()Lcom/whatsapp/mediacomposer/doodle/titlebar/plugin/ToolType;
+    .registers 2
+
+    .line 0
+    iget-object v0, p0, LX/ALR;->A02:Lcom/whatsapp/mediacomposer/doodle/titlebar/plugin/ToolType;
+
+    .line 2
+    return-object v0
+.end method
+
+.method public C15(LX/9hA;)V
+    .registers 3
+
+    .line 0
+    const/4 v0, 0x0
+
+    .line 1
+    invoke-static {p1, v0}, LX/00m;->A09(Ljava/lang/Object;I)V
+
+    .line 4
+    iput-object p1, p0, LX/ALR;->A01:LX/9hA;
+
+    .line 6
+    sget-object v0, Lcom/whatsapp/mediacomposer/doodle/titlebar/plugin/ToolType;->CROP:Lcom/whatsapp/mediacomposer/doodle/titlebar/plugin/ToolType;
+
+    .line 8
+    invoke-virtual {p1, v0}, LX/9hA;->A01(Lcom/whatsapp/mediacomposer/doodle/titlebar/plugin/ToolType;)LX/9sX;
+
+    .line 11
+    move-result-object v0
+
+    .line 12
+    iput-object v0, p0, LX/ALR;->A00:LX/9sX;
+
+    .line 14
+    return-void
+.end method
+
+.method public Ce2(LX/Aj6;)V
+    .registers 4
+
+    .line 0
+    invoke-static {p1}, LX/8cX;->A1a(Ljava/lang/Object;)Z
+
+    .line 3
+    move-result v0
+
+    .line 4
+    if-eqz v0, :cond_18
+
+    .line 6
+    check-cast p1, LX/AK8;
+
+    .line 8
+    iget-object v1, p1, LX/AK8;->A02:LX/9JF;
+
+    .line 10
+    sget-object v0, LX/9JF;->A07:LX/9JF;
+
+    .line 12
+    if-ne v1, v0, :cond_17
+
+    .line 14
+    iget-object v1, p0, LX/ALR;->A00:LX/9sX;
+
+    .line 16
+    if-eqz v1, :cond_17
+
+    .line 18
+    const/16 v0, 0xa
+
+    .line 20
+    :goto_14
+    invoke-static {v1, p1, v0}, LX/9sX;->A00(LX/9sX;Ljava/lang/Object;I)V
+
+    .line 23
+    :cond_17
+    return-void
+
+    .line 24
+    :cond_18
+    instance-of v0, p1, LX/AKm;
+
+    .line 26
+    if-eqz v0, :cond_17
+
+    .line 28
+    if-eqz p1, :cond_17
+
+    .line 30
+    iget-object v1, p0, LX/ALR;->A00:LX/9sX;
+
+    .line 32
+    if-eqz v1, :cond_17
+
+    .line 34
+    const/16 v0, 0x9
+
+    .line 36
+    goto :goto_14
+.end method
+
+.method public onClick()V
+    .registers 4
+
+    .line 0
+    iget-object v2, p0, LX/ALR;->A03:LX/9kK;
+
+    .line 2
+    iget-object v0, p0, LX/ALR;->A01:LX/9hA;
+
+    .line 4
+    invoke-static {v0}, LX/8cY;->A06(LX/9hA;)I
+
+    .line 7
+    move-result v1
+
+    .line 8
+    new-instance v0, LX/98a;
+
+    .line 10
+    invoke-direct {v0, v1}, LX/98a;-><init>(I)V
+
+    .line 13
+    invoke-virtual {v2, v0}, LX/9kK;->A02(LX/9Pd;)V
+
+    .line 16
+    iget-object v0, p0, LX/ALR;->A04:Lkotlin/jvm/functions/Function0;
+
+    .line 18
+    invoke-static {v0}, LX/2Aj;->A1Z(Lkotlin/jvm/functions/Function0;)Z
+
+    .line 21
+    move-result v0
+
+    .line 22
+    if-eqz v0, :cond_33
+
+    .line 24
+    iget-object v0, p0, LX/ALR;->A01:LX/9hA;
+
+    .line 26
+    if-eqz v0, :cond_32
+
+    .line 28
+    iget-object v0, v0, LX/9hA;->A00:LX/AK1;
+
+    .line 30
+    iget-object v2, v0, LX/AK1;->A0N:LX/9Ua;
+
+    .line 32
+    if-eqz v2, :cond_32
+
+    .line 34
+    const/16 v0, 0x1a
+
+    .line 36
+    invoke-static {p0, v0}, LX/AZm;->A00(Ljava/lang/Object;I)LX/AZm;
+
+    .line 39
+    move-result-object v0
+
+    .line 40
+    new-instance v1, LX/AKv;
+
+    .line 42
+    invoke-direct {v1, v0}, LX/AKv;-><init>(Lkotlin/jvm/functions/Function0;)V
+
+    .line 45
+    iget-object v0, v2, LX/9Ua;->A00:LX/AK1;
+
+    .line 47
+    invoke-static {v0, v1}, LX/AK1;->A04(LX/AK1;LX/Aj5;)V
+
+    .line 50
+    :cond_32
+    return-void
+
+    .line 51
+    :cond_33
+    invoke-static {p0}, LX/ALR;->A00(LX/ALR;)V
+
+    .line 54
+    return-void
+.end method

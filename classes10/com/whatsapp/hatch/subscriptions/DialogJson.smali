@@ -1,0 +1,91 @@
+.class public final Lcom/whatsapp/hatch/subscriptions/DialogJson;
+.super Ljava/lang/Object;
+.source ""
+
+
+# annotations
+.annotation runtime Lkotlinx/serialization/Serializable;
+.end annotation
+
+
+# instance fields
+.field public final A00:Ljava/lang/String;
+
+.field public final A01:Ljava/lang/String;
+
+
+# direct methods
+.method public constructor <init>()V
+    .registers 2
+
+    .line 536870912
+    const/4 v0, 0x0
+
+    .line 536870913
+    invoke-direct {p0, v0, v0}, Lcom/whatsapp/hatch/subscriptions/DialogJson;-><init>(Ljava/lang/String;Ljava/lang/String;)V
+
+    .line 536870916
+    return-void
+.end method
+
+.method public synthetic constructor <init>(ILjava/lang/String;Ljava/lang/String;)V
+    .registers 6
+
+    .line 0
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    .line 3
+    and-int/lit8 v0, p1, 0x1
+
+    .line 5
+    const/4 v1, 0x0
+
+    .line 6
+    if-nez v0, :cond_11
+
+    .line 8
+    iput-object v1, p0, Lcom/whatsapp/hatch/subscriptions/DialogJson;->A01:Ljava/lang/String;
+
+    .line 10
+    :goto_a
+    and-int/lit8 v0, p1, 0x2
+
+    .line 12
+    if-nez v0, :cond_14
+
+    .line 14
+    iput-object v1, p0, Lcom/whatsapp/hatch/subscriptions/DialogJson;->A00:Ljava/lang/String;
+
+    .line 16
+    return-void
+
+    .line 17
+    :cond_11
+    iput-object p2, p0, Lcom/whatsapp/hatch/subscriptions/DialogJson;->A01:Ljava/lang/String;
+
+    .line 19
+    goto :goto_a
+
+    .line 20
+    :cond_14
+    iput-object p3, p0, Lcom/whatsapp/hatch/subscriptions/DialogJson;->A00:Ljava/lang/String;
+
+    .line 22
+    return-void
+.end method
+
+.method public constructor <init>(Ljava/lang/String;Ljava/lang/String;)V
+    .registers 3
+
+    .line 268435456
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    .line 268435459
+    iput-object p1, p0, Lcom/whatsapp/hatch/subscriptions/DialogJson;->A01:Ljava/lang/String;
+
+    .line 268435461
+    iput-object p2, p0, Lcom/whatsapp/hatch/subscriptions/DialogJson;->A00:Ljava/lang/String;
+
+    .line 268435463
+    return-void
+.end method

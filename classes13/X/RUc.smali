@@ -1,0 +1,35 @@
+.class public LX/RUc;
+.super Ljava/lang/Exception;
+.source ""
+
+
+# instance fields
+.field public final mAuthority:LX/SMg;
+
+
+# direct methods
+.method public constructor <init>(LX/SMg;Ljava/lang/String;)V
+    .registers 3
+
+    .line 268435456
+    invoke-direct {p0, p2}, Ljava/lang/Exception;-><init>(Ljava/lang/String;)V
+
+    .line 268435459
+    iput-object p1, p0, LX/RUc;->mAuthority:LX/SMg;
+
+    .line 268435461
+    return-void
+.end method
+
+.method public constructor <init>(LX/SMg;Ljava/lang/String;Ljava/lang/Throwable;)V
+    .registers 4
+
+    .line 0
+    invoke-direct {p0, p2, p3}, Ljava/lang/Exception;-><init>(Ljava/lang/String;Ljava/lang/Throwable;)V
+
+    .line 3
+    iput-object p1, p0, LX/RUc;->mAuthority:LX/SMg;
+
+    .line 5
+    return-void
+.end method

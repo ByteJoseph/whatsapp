@@ -1,0 +1,129 @@
+.class public LX/FQ7;
+.super Ljava/lang/Object;
+.source ""
+
+
+# instance fields
+.field public A00:I
+
+.field public A01:Ljava/lang/String;
+
+.field public A02:Ljava/util/List;
+
+.field public A03:Z
+
+
+# direct methods
+.method public constructor <init>()V
+    .registers 3
+
+    .line 0
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    .line 3
+    new-instance v0, Ljava/util/LinkedList;
+
+    .line 5
+    invoke-direct {v0}, Ljava/util/LinkedList;-><init>()V
+
+    .line 8
+    iput-object v0, p0, LX/FQ7;->A02:Ljava/util/List;
+
+    .line 10
+    const/4 v0, 0x0
+
+    .line 11
+    iput-boolean v0, p0, LX/FQ7;->A03:Z
+
+    .line 13
+    const/4 v1, 0x0
+
+    .line 14
+    const/16 v0, 0x64
+
+    .line 16
+    iput v0, p0, LX/FQ7;->A00:I
+
+    .line 18
+    iput-object v1, p0, LX/FQ7;->A01:Ljava/lang/String;
+
+    .line 20
+    return-void
+.end method
+
+.method public static A00(LX/FQ7;)Lorg/whispersystems/jobqueue/JobParameters;
+    .registers 2
+
+    .line 0
+    const/4 v0, 0x1
+
+    .line 1
+    iput-boolean v0, p0, LX/FQ7;->A03:Z
+
+    .line 3
+    new-instance v0, Lcom/whatsapp/infra/jobs/requirements/ChatConnectionRequirement;
+
+    .line 5
+    invoke-direct {v0}, Ljava/lang/Object;-><init>()V
+
+    .line 8
+    invoke-virtual {p0, v0}, LX/FQ7;->A02(Lorg/whispersystems/jobqueue/requirements/Requirement;)V
+
+    .line 11
+    new-instance v0, Lcom/whatsapp/infra/jobs/requirements/OfflineProcessingCompletedRequirement;
+
+    .line 13
+    invoke-direct {v0}, Ljava/lang/Object;-><init>()V
+
+    .line 16
+    invoke-virtual {p0, v0}, LX/FQ7;->A02(Lorg/whispersystems/jobqueue/requirements/Requirement;)V
+
+    .line 19
+    invoke-virtual {p0}, LX/FQ7;->A01()Lorg/whispersystems/jobqueue/JobParameters;
+
+    .line 22
+    move-result-object v0
+
+    .line 23
+    return-object v0
+.end method
+
+
+# virtual methods
+.method public A01()Lorg/whispersystems/jobqueue/JobParameters;
+    .registers 6
+
+    .line 0
+    iget-object v4, p0, LX/FQ7;->A02:Ljava/util/List;
+
+    .line 2
+    iget-boolean v3, p0, LX/FQ7;->A03:Z
+
+    .line 4
+    iget-object v2, p0, LX/FQ7;->A01:Ljava/lang/String;
+
+    .line 6
+    iget v1, p0, LX/FQ7;->A00:I
+
+    .line 8
+    new-instance v0, Lorg/whispersystems/jobqueue/JobParameters;
+
+    .line 10
+    invoke-direct {v0, v2, v4, v1, v3}, Lorg/whispersystems/jobqueue/JobParameters;-><init>(Ljava/lang/String;Ljava/util/List;IZ)V
+
+    .line 13
+    return-object v0
+.end method
+
+.method public A02(Lorg/whispersystems/jobqueue/requirements/Requirement;)V
+    .registers 3
+
+    .line 0
+    iget-object v0, p0, LX/FQ7;->A02:Ljava/util/List;
+
+    .line 2
+    invoke-interface {v0, p1}, Ljava/util/List;->add(Ljava/lang/Object;)Z
+
+    .line 5
+    return-void
+.end method

@@ -1,0 +1,66 @@
+.class public LX/LAk;
+.super LX/L1y;
+.source ""
+
+
+# static fields
+.field public static final CREATOR:Landroid/os/Parcelable$Creator;
+
+
+# instance fields
+.field public A00:I
+
+.field public A01:I
+
+.field public A02:I
+
+
+# direct methods
+.method public static constructor <clinit>()V
+    .registers 2
+
+    .line 0
+    const/4 v1, 0x7
+
+    .line 1
+    new-instance v0, LX/MNe;
+
+    .line 3
+    invoke-direct {v0, v1}, LX/MNe;-><init>(I)V
+
+    .line 6
+    sput-object v0, LX/LAk;->CREATOR:Landroid/os/Parcelable$Creator;
+
+    .line 8
+    return-void
+.end method
+
+
+# virtual methods
+.method public writeToParcel(Landroid/os/Parcel;I)V
+    .registers 4
+
+    .line 0
+    invoke-super {p0, p1, p2}, Landroid/view/AbsSavedState;->writeToParcel(Landroid/os/Parcel;I)V
+
+    .line 3
+    iget v0, p0, LX/LAk;->A02:I
+
+    .line 5
+    invoke-virtual {p1, v0}, Landroid/os/Parcel;->writeInt(I)V
+
+    .line 8
+    iget v0, p0, LX/LAk;->A01:I
+
+    .line 10
+    invoke-virtual {p1, v0}, Landroid/os/Parcel;->writeInt(I)V
+
+    .line 13
+    iget v0, p0, LX/LAk;->A00:I
+
+    .line 15
+    invoke-virtual {p1, v0}, Landroid/os/Parcel;->writeInt(I)V
+
+    .line 18
+    return-void
+.end method

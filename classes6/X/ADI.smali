@@ -1,0 +1,50 @@
+.class public final LX/ADI;
+.super Ljava/lang/Object;
+.source ""
+
+# interfaces
+.implements LX/Myt;
+
+
+# instance fields
+.field public final synthetic A00:LX/96u;
+
+
+# direct methods
+.method public constructor <init>(LX/96u;)V
+    .registers 2
+
+    .line 0
+    iput-object p1, p0, LX/ADI;->A00:LX/96u;
+
+    .line 2
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    .line 5
+    return-void
+.end method
+
+
+# virtual methods
+.method public CCg()V
+    .registers 1
+
+    .line 0
+    return-void
+.end method
+
+.method public bridge synthetic CTm(Ljava/lang/Object;)V
+    .registers 4
+
+    .line 0
+    iget-object v1, p0, LX/ADI;->A00:LX/96u;
+
+    .line 2
+    const/4 v0, 0x0
+
+    .line 3
+    invoke-static {v1, v0}, LX/96u;->A00(LX/96u;Z)V
+
+    .line 6
+    return-void
+.end method

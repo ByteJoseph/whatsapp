@@ -1,0 +1,223 @@
+.class public final Lcom/meta/metaai/shared/modelselection/data/CachedModesData;
+.super Ljava/lang/Object;
+.source ""
+
+
+# annotations
+.annotation runtime Lkotlinx/serialization/Serializable;
+.end annotation
+
+
+# static fields
+.field public static final A02:[LX/00q;
+
+
+# instance fields
+.field public final A00:J
+
+.field public final A01:Ljava/util/List;
+
+
+# direct methods
+.method public static constructor <clinit>()V
+    .registers 4
+
+    .line 0
+    const/4 v3, 0x0
+
+    .line 1
+    const/4 v0, 0x2
+
+    .line 2
+    new-array v2, v0, [LX/00q;
+
+    .line 4
+    sget-object v1, LX/02Y;->A01:Ljava/lang/Integer;
+
+    .line 6
+    sget-object v0, LX/HyL;->A00:LX/HyL;
+
+    .line 8
+    invoke-static {v1, v0}, LX/00p;->A00(Ljava/lang/Integer;Lkotlin/jvm/functions/Function0;)LX/00q;
+
+    .line 11
+    move-result-object v0
+
+    .line 12
+    invoke-static {v0, v3, v2}, LX/1U7;->A1L(Ljava/lang/Object;Ljava/lang/Object;[Ljava/lang/Object;)V
+
+    .line 15
+    sput-object v2, Lcom/meta/metaai/shared/modelselection/data/CachedModesData;->A02:[LX/00q;
+
+    .line 17
+    return-void
+.end method
+
+.method public synthetic constructor <init>(Ljava/util/List;IJ)V
+    .registers 7
+
+    .line 0
+    and-int/lit8 v0, p2, 0x3
+
+    .line 2
+    const/4 v1, 0x3
+
+    .line 3
+    if-eq v1, v0, :cond_c
+
+    .line 5
+    sget-object v0, LX/HsK;->A01:LX/0ub;
+
+    .line 7
+    invoke-static {v0, p2, v1}, LX/GRK;->A00(LX/0ub;II)V
+
+    .line 10
+    const/4 v0, 0x0
+
+    .line 11
+    throw v0
+
+    .line 12
+    :cond_c
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    .line 15
+    iput-object p1, p0, Lcom/meta/metaai/shared/modelselection/data/CachedModesData;->A01:Ljava/util/List;
+
+    .line 17
+    iput-wide p3, p0, Lcom/meta/metaai/shared/modelselection/data/CachedModesData;->A00:J
+
+    .line 19
+    return-void
+.end method
+
+.method public constructor <init>(Ljava/util/List;J)V
+    .registers 4
+
+    .line 268435456
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    .line 268435459
+    iput-object p1, p0, Lcom/meta/metaai/shared/modelselection/data/CachedModesData;->A01:Ljava/util/List;
+
+    .line 268435461
+    iput-wide p2, p0, Lcom/meta/metaai/shared/modelselection/data/CachedModesData;->A00:J
+
+    .line 268435463
+    return-void
+.end method
+
+
+# virtual methods
+.method public equals(Ljava/lang/Object;)Z
+    .registers 9
+
+    .line 0
+    const/4 v6, 0x1
+
+    .line 1
+    if-eq p0, p1, :cond_1d
+
+    .line 3
+    instance-of v0, p1, Lcom/meta/metaai/shared/modelselection/data/CachedModesData;
+
+    .line 5
+    const/4 v5, 0x0
+
+    .line 6
+    if-eqz v0, :cond_1c
+
+    .line 8
+    check-cast p1, Lcom/meta/metaai/shared/modelselection/data/CachedModesData;
+
+    .line 10
+    iget-object v1, p0, Lcom/meta/metaai/shared/modelselection/data/CachedModesData;->A01:Ljava/util/List;
+
+    .line 12
+    iget-object v0, p1, Lcom/meta/metaai/shared/modelselection/data/CachedModesData;->A01:Ljava/util/List;
+
+    .line 14
+    invoke-static {v1, v0}, LX/00m;->areEqual(Ljava/lang/Object;Ljava/lang/Object;)Z
+
+    .line 17
+    move-result v0
+
+    .line 18
+    if-eqz v0, :cond_1c
+
+    .line 20
+    iget-wide v3, p0, Lcom/meta/metaai/shared/modelselection/data/CachedModesData;->A00:J
+
+    .line 22
+    iget-wide v1, p1, Lcom/meta/metaai/shared/modelselection/data/CachedModesData;->A00:J
+
+    .line 24
+    cmp-long v0, v3, v1
+
+    .line 26
+    if-eqz v0, :cond_1d
+
+    .line 28
+    :cond_1c
+    return v5
+
+    .line 29
+    :cond_1d
+    return v6
+.end method
+
+.method public hashCode()I
+    .registers 4
+
+    .line 0
+    iget-object v0, p0, Lcom/meta/metaai/shared/modelselection/data/CachedModesData;->A01:Ljava/util/List;
+
+    .line 2
+    invoke-static {v0}, LX/1U7;->A0B(Ljava/lang/Object;)I
+
+    .line 5
+    move-result v2
+
+    .line 6
+    iget-wide v0, p0, Lcom/meta/metaai/shared/modelselection/data/CachedModesData;->A00:J
+
+    .line 8
+    invoke-static {v0, v1, v2}, LX/1U7;->A03(JI)I
+
+    .line 11
+    move-result v0
+
+    .line 12
+    return v0
+.end method
+
+.method public toString()Ljava/lang/String;
+    .registers 5
+
+    .line 0
+    iget-object v1, p0, Lcom/meta/metaai/shared/modelselection/data/CachedModesData;->A01:Ljava/util/List;
+
+    .line 2
+    iget-wide v2, p0, Lcom/meta/metaai/shared/modelselection/data/CachedModesData;->A00:J
+
+    .line 4
+    const-string v0, "CachedModesData(modes="
+
+    .line 6
+    invoke-static {v1, v0}, LX/1U7;->A12(Ljava/lang/Object;Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    .line 9
+    move-result-object v1
+
+    .line 10
+    const-string v0, ", cachedAtMs="
+
+    .line 12
+    invoke-static {v0, v1, v2, v3}, LX/1U7;->A0y(Ljava/lang/String;Ljava/lang/StringBuilder;J)Ljava/lang/String;
+
+    .line 15
+    move-result-object v0
+
+    .line 16
+    return-object v0
+.end method

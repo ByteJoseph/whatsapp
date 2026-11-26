@@ -1,0 +1,21 @@
+.class public final LX/Tt2;
+.super LX/UAI;
+.source ""
+
+
+# direct methods
+.method public constructor <init>()V
+    .registers 3
+
+    .line 0
+    const-string v1, "IN_APP_CACHE"
+
+    .line 2
+    const/4 v0, 0x0
+
+    .line 3
+    invoke-direct {p0, v1, v0}, LX/UAI;-><init>(Ljava/lang/String;I)V
+
+    .line 6
+    return-void
+.end method

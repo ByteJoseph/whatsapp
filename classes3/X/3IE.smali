@@ -1,0 +1,24 @@
+.class public final LX/3IE;
+.super Ljava/lang/Object;
+.source ""
+
+# interfaces
+.implements LX/3ZQ;
+
+
+# instance fields
+.field public A00:Ljava/lang/String;
+
+.field public A01:Ljava/lang/String;
+
+
+# direct methods
+.method public constructor <init>()V
+    .registers 1
+
+    .line 0
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    .line 3
+    return-void
+.end method

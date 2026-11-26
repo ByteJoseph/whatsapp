@@ -1,0 +1,131 @@
+.class public final LX/PKV;
+.super Ljava/lang/Object;
+.source ""
+
+# interfaces
+.implements Landroid/os/Parcelable$Creator;
+
+
+# direct methods
+.method public constructor <init>()V
+    .registers 1
+
+    .line 0
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    .line 3
+    return-void
+.end method
+
+
+# virtual methods
+.method public final bridge synthetic createFromParcel(Landroid/os/Parcel;)Ljava/lang/Object;
+    .registers 10
+
+    .line 0
+    invoke-static {p1}, LX/PE3;->A02(Landroid/os/Parcel;)I
+
+    .line 3
+    move-result v7
+
+    .line 4
+    const/4 v6, 0x0
+
+    .line 5
+    const/4 v5, 0x0
+
+    .line 6
+    const/4 v4, 0x0
+
+    .line 7
+    :goto_7
+    invoke-virtual {p1}, Landroid/os/Parcel;->dataPosition()I
+
+    .line 10
+    move-result v0
+
+    .line 11
+    if-ge v0, v7, :cond_2a
+
+    .line 13
+    invoke-virtual {p1}, Landroid/os/Parcel;->readInt()I
+
+    .line 16
+    move-result v3
+
+    .line 17
+    int-to-char v2, v3
+
+    .line 18
+    const/4 v0, 0x2
+
+    .line 19
+    if-eq v2, v0, :cond_24
+
+    .line 21
+    const/4 v1, 0x3
+
+    .line 22
+    const/4 v0, 0x4
+
+    .line 23
+    if-eq v2, v1, :cond_1e
+
+    .line 25
+    invoke-static {p1, v6, v2, v0, v3}, LX/PE3;->A0K(Landroid/os/Parcel;Ljava/lang/String;III)Ljava/lang/String;
+
+    .line 28
+    move-result-object v6
+
+    .line 29
+    goto :goto_7
+
+    .line 30
+    :cond_1e
+    invoke-static {p1, v3}, LX/PE3;->A04(Landroid/os/Parcel;I)I
+
+    .line 33
+    move-result v0
+
+    .line 34
+    int-to-byte v4, v0
+
+    .line 35
+    goto :goto_7
+
+    .line 36
+    :cond_24
+    invoke-static {p1, v3}, LX/PE3;->A03(Landroid/os/Parcel;I)I
+
+    .line 39
+    move-result v0
+
+    .line 40
+    int-to-byte v5, v0
+
+    .line 41
+    goto :goto_7
+
+    .line 42
+    :cond_2a
+    invoke-static {p1, v7}, LX/PE3;->A0O(Landroid/os/Parcel;I)V
+
+    .line 45
+    new-instance v0, LX/NNd;
+
+    .line 47
+    invoke-direct {v0, v6, v5, v4}, LX/NNd;-><init>(Ljava/lang/String;BB)V
+
+    .line 50
+    return-object v0
+.end method
+
+.method public final synthetic newArray(I)[Ljava/lang/Object;
+    .registers 3
+
+    .line 0
+    new-array v0, p1, [LX/NNd;
+
+    .line 2
+    return-object v0
+.end method

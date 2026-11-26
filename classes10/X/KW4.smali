@@ -1,0 +1,68 @@
+.class public final LX/KW4;
+.super LX/05U;
+.source ""
+
+# interfaces
+.implements Lkotlin/jvm/functions/Function0;
+
+
+# static fields
+.field public static final A00:LX/KW4;
+
+
+# direct methods
+.method public static constructor <clinit>()V
+    .registers 1
+
+    .line 0
+    new-instance v0, LX/KW4;
+
+    .line 2
+    invoke-direct {v0}, LX/KW4;-><init>()V
+
+    .line 5
+    sput-object v0, LX/KW4;->A00:LX/KW4;
+
+    .line 7
+    return-void
+.end method
+
+.method public constructor <init>()V
+    .registers 2
+
+    .line 0
+    const/4 v0, 0x0
+
+    .line 1
+    invoke-direct {p0, v0}, LX/05U;-><init>(I)V
+
+    .line 4
+    return-void
+.end method
+
+
+# virtual methods
+.method public bridge synthetic invoke()Ljava/lang/Object;
+    .registers 4
+
+    .line 0
+    const/4 v2, 0x1
+
+    .line 1
+    sget-object v0, LX/Jgp;->A00:Ljava/util/concurrent/atomic/AtomicInteger;
+
+    .line 3
+    invoke-virtual {v0, v2}, Ljava/util/concurrent/atomic/AtomicInteger;->addAndGet(I)I
+
+    .line 6
+    move-result v1
+
+    .line 7
+    new-instance v0, LX/Jw8;
+
+    .line 9
+    invoke-direct {v0, v2, v1}, LX/Jw8;-><init>(ZI)V
+
+    .line 12
+    return-object v0
+.end method

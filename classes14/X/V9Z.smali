@@ -1,0 +1,18 @@
+.class public LX/V9Z;
+.super Ljava/security/cert/CertPathValidatorException;
+.source ""
+
+
+# direct methods
+.method public constructor <init>(Ljava/lang/String;Ljava/security/cert/CertPath;I)V
+    .registers 5
+
+    .line 0
+    const/4 v0, 0x0
+
+    .line 1
+    invoke-direct {p0, p1, v0, p2, p3}, Ljava/security/cert/CertPathValidatorException;-><init>(Ljava/lang/String;Ljava/lang/Throwable;Ljava/security/cert/CertPath;I)V
+
+    .line 4
+    return-void
+.end method

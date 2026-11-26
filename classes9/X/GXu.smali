@@ -1,0 +1,57 @@
+.class public final LX/GXu;
+.super Ljava/lang/Object;
+.source ""
+
+
+# instance fields
+.field public final A00:LX/Ghl;
+
+.field public final A01:LX/14o;
+
+
+# direct methods
+.method public constructor <init>()V
+    .registers 2
+
+    .line 0
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    .line 3
+    const/16 v0, 0x7a2
+
+    .line 5
+    invoke-static {v0}, LX/00D;->A02(I)Ljava/lang/Object;
+
+    .line 8
+    move-result-object v0
+
+    .line 9
+    check-cast v0, LX/Ghl;
+
+    .line 11
+    iput-object v0, p0, LX/GXu;->A00:LX/Ghl;
+
+    .line 13
+    const/16 v0, 0x6c4
+
+    .line 15
+    invoke-static {v0}, LX/05e;->A00(I)LX/05b;
+
+    .line 18
+    const/16 v0, 0x777
+
+    .line 20
+    invoke-static {v0}, LX/00D;->A02(I)Ljava/lang/Object;
+
+    .line 23
+    move-result-object v0
+
+    .line 24
+    check-cast v0, LX/14o;
+
+    .line 26
+    iput-object v0, p0, LX/GXu;->A01:LX/14o;
+
+    .line 28
+    return-void
+.end method

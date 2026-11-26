@@ -1,0 +1,69 @@
+.class public final LX/637;
+.super LX/7qI;
+.source ""
+
+
+# instance fields
+.field public final A00:LX/00Z;
+
+.field public final A01:LX/706;
+
+.field public final A02:LX/7Wk;
+
+
+# direct methods
+.method public constructor <init>(Landroid/content/Context;LX/00Z;LX/706;LX/7Wk;II)V
+    .registers 7
+
+    .line 0
+    invoke-static {p1, p2}, LX/5UP;->A14(Ljava/lang/Object;Ljava/lang/Object;)V
+
+    .line 3
+    invoke-direct {p0, p1, p5, p6}, LX/7qI;-><init>(Landroid/content/Context;II)V
+
+    .line 6
+    iput-object p2, p0, LX/637;->A00:LX/00Z;
+
+    .line 8
+    iput-object p4, p0, LX/637;->A02:LX/7Wk;
+
+    .line 10
+    iput-object p3, p0, LX/637;->A01:LX/706;
+
+    .line 12
+    return-void
+.end method
+
+
+# virtual methods
+.method public bridge synthetic BaU(Landroid/content/Context;Landroid/text/SpannableStringBuilder;LX/6Mj;IIIII)V
+    .registers 11
+
+    .line 0
+    check-cast p3, LX/63u;
+
+    .line 2
+    invoke-static {p2, p3}, LX/2Af;->A12(Ljava/lang/Object;Ljava/lang/Object;)V
+
+    .line 5
+    if-ge p4, p5, :cond_14
+
+    .line 7
+    new-instance v1, LX/634;
+
+    .line 9
+    invoke-direct {v1, p0, p3}, LX/634;-><init>(LX/637;LX/63u;)V
+
+    .line 12
+    iget v0, p0, LX/7qI;->A00:I
+
+    .line 14
+    invoke-virtual {p2, v1, p4, p5, p6}, Landroid/text/SpannableStringBuilder;->setSpan(Ljava/lang/Object;III)V
+
+    .line 17
+    invoke-static {p2, v0, p4, p5, p6}, LX/5UM;->A1F(Landroid/text/SpannableStringBuilder;IIII)V
+
+    .line 20
+    :cond_14
+    return-void
+.end method

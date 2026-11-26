@@ -1,0 +1,480 @@
+.class public final LX/FpA;
+.super LX/0Fh;
+.source ""
+
+
+# instance fields
+.field public A00:Ljava/lang/Integer;
+
+.field public A01:Ljava/lang/Integer;
+
+.field public A02:Ljava/lang/Long;
+
+.field public A03:Ljava/lang/Long;
+
+.field public A04:Ljava/lang/Long;
+
+.field public A05:Ljava/lang/Long;
+
+.field public A06:Ljava/lang/Long;
+
+.field public A07:Ljava/lang/Long;
+
+.field public A08:Ljava/lang/String;
+
+.field public dedupKey:Ljava/lang/Long;
+
+
+# direct methods
+.method public constructor <init>()V
+    .registers 5
+
+    .line 0
+    const/4 v0, 0x1
+
+    .line 1
+    const/4 v3, 0x0
+
+    .line 2
+    invoke-static {v0}, LX/2Ac;->A0p(I)LX/012;
+
+    .line 5
+    move-result-object v2
+
+    .line 6
+    const/4 v1, -0x1
+
+    .line 7
+    const/16 v0, 0x218a
+
+    .line 9
+    invoke-direct {p0, v0, v2, v3, v1}, LX/0Fh;-><init>(ILX/012;II)V
+
+    .line 12
+    return-void
+.end method
+
+
+# virtual methods
+.method public getEventNameForFalco()Ljava/lang/String;
+    .registers 2
+
+    .line 0
+    const-string v0, "wam_companion_contact_refresh"
+
+    .line 2
+    return-object v0
+.end method
+
+.method public getFieldsMap()Ljava/util/Map;
+    .registers 4
+
+    .line 0
+    invoke-static {}, LX/1U7;->A18()Ljava/util/LinkedHashMap;
+
+    .line 3
+    move-result-object v2
+
+    .line 4
+    invoke-static {}, LX/1U7;->A0d()Ljava/lang/Integer;
+
+    .line 7
+    move-result-object v1
+
+    .line 8
+    iget-object v0, p0, LX/FpA;->A02:Ljava/lang/Long;
+
+    .line 10
+    invoke-static {v1, v0, v2}, LX/1U7;->A0e(Ljava/lang/Object;Ljava/lang/Object;Ljava/util/Map;)Ljava/lang/Integer;
+
+    .line 13
+    move-result-object v1
+
+    .line 14
+    iget-object v0, p0, LX/FpA;->A03:Ljava/lang/Long;
+
+    .line 16
+    invoke-interface {v2, v1, v0}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+
+    .line 19
+    const/4 v0, 0x3
+
+    .line 20
+    invoke-static {v0, v2}, LX/1U7;->A1C(ILjava/util/Map;)V
+
+    .line 23
+    invoke-static {}, LX/2Ad;->A1F()Ljava/lang/Integer;
+
+    .line 26
+    move-result-object v1
+
+    .line 27
+    iget-object v0, p0, LX/FpA;->A04:Ljava/lang/Long;
+
+    .line 29
+    invoke-static {v1, v0, v2}, LX/2Af;->A0l(Ljava/lang/Object;Ljava/lang/Object;Ljava/util/Map;)Ljava/lang/Integer;
+
+    .line 32
+    move-result-object v1
+
+    .line 33
+    iget-object v0, p0, LX/FpA;->dedupKey:Ljava/lang/Long;
+
+    .line 35
+    invoke-static {v1, v0, v2}, LX/1U7;->A0h(Ljava/lang/Object;Ljava/lang/Object;Ljava/util/Map;)Ljava/lang/Integer;
+
+    .line 38
+    move-result-object v1
+
+    .line 39
+    iget-object v0, p0, LX/FpA;->A05:Ljava/lang/Long;
+
+    .line 41
+    invoke-static {v1, v0, v2}, LX/2Af;->A0h(Ljava/lang/Object;Ljava/lang/Object;Ljava/util/Map;)Ljava/lang/Integer;
+
+    .line 44
+    move-result-object v1
+
+    .line 45
+    iget-object v0, p0, LX/FpA;->A06:Ljava/lang/Long;
+
+    .line 47
+    invoke-static {v1, v0, v2}, LX/2Af;->A0i(Ljava/lang/Object;Ljava/lang/Object;Ljava/util/Map;)Ljava/lang/Integer;
+
+    .line 50
+    move-result-object v1
+
+    .line 51
+    iget-object v0, p0, LX/FpA;->A00:Ljava/lang/Integer;
+
+    .line 53
+    invoke-static {v1, v0, v2}, LX/1U7;->A0i(Ljava/lang/Object;Ljava/lang/Object;Ljava/util/Map;)Ljava/lang/Integer;
+
+    .line 56
+    move-result-object v1
+
+    .line 57
+    iget-object v0, p0, LX/FpA;->A08:Ljava/lang/String;
+
+    .line 59
+    invoke-static {v1, v0, v2}, LX/2Af;->A0j(Ljava/lang/Object;Ljava/lang/Object;Ljava/util/Map;)Ljava/lang/Integer;
+
+    .line 62
+    move-result-object v1
+
+    .line 63
+    iget-object v0, p0, LX/FpA;->A01:Ljava/lang/Integer;
+
+    .line 65
+    invoke-static {v1, v0, v2}, LX/2Af;->A0k(Ljava/lang/Object;Ljava/lang/Object;Ljava/util/Map;)Ljava/lang/Integer;
+
+    .line 68
+    move-result-object v1
+
+    .line 69
+    iget-object v0, p0, LX/FpA;->A07:Ljava/lang/Long;
+
+    .line 71
+    invoke-interface {v2, v1, v0}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+
+    .line 74
+    return-object v2
+.end method
+
+.method public getFieldsMapForFalco()Ljava/util/Map;
+    .registers 5
+
+    .line 0
+    invoke-static {}, LX/1U7;->A18()Ljava/util/LinkedHashMap;
+
+    .line 3
+    move-result-object v3
+
+    .line 4
+    const-string v1, "contact_added_count"
+
+    .line 6
+    iget-object v0, p0, LX/FpA;->A02:Ljava/lang/Long;
+
+    .line 8
+    invoke-interface {v3, v1, v0}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+
+    .line 11
+    const-string v1, "contact_edited_count"
+
+    .line 13
+    iget-object v0, p0, LX/FpA;->A03:Ljava/lang/Long;
+
+    .line 15
+    invoke-interface {v3, v1, v0}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+
+    .line 18
+    const-string v1, "contact_extra_count"
+
+    .line 20
+    const/4 v0, 0x0
+
+    .line 21
+    invoke-interface {v3, v1, v0}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+
+    .line 24
+    const-string v1, "contact_uploaded_count"
+
+    .line 26
+    iget-object v0, p0, LX/FpA;->A04:Ljava/lang/Long;
+
+    .line 28
+    invoke-interface {v3, v1, v0}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+
+    .line 31
+    const-string v1, "dedup_key"
+
+    .line 33
+    iget-object v0, p0, LX/FpA;->dedupKey:Ljava/lang/Long;
+
+    .line 35
+    invoke-interface {v3, v1, v0}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+
+    .line 38
+    const-string v1, "primary_duration_ms"
+
+    .line 40
+    iget-object v0, p0, LX/FpA;->A05:Ljava/lang/Long;
+
+    .line 42
+    invoke-interface {v3, v1, v0}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+
+    .line 45
+    const-string v1, "refresh_apply_duration_ms"
+
+    .line 47
+    iget-object v0, p0, LX/FpA;->A06:Ljava/lang/Long;
+
+    .line 49
+    invoke-interface {v3, v1, v0}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+
+    .line 52
+    iget-object v1, p0, LX/FpA;->A00:Ljava/lang/Integer;
+
+    .line 54
+    const/4 v2, -0x1
+
+    .line 55
+    if-eqz v1, :cond_44
+
+    .line 57
+    invoke-virtual {v1}, Ljava/lang/Number;->intValue()I
+
+    .line 60
+    move-result v0
+
+    .line 61
+    if-eq v0, v2, :cond_44
+
+    .line 63
+    const-string v0, "refresh_event_type"
+
+    .line 65
+    invoke-interface {v3, v0, v1}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+
+    .line 68
+    :cond_44
+    const-string v1, "refresh_id"
+
+    .line 70
+    iget-object v0, p0, LX/FpA;->A08:Ljava/lang/String;
+
+    .line 72
+    invoke-interface {v3, v1, v0}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+
+    .line 75
+    iget-object v1, p0, LX/FpA;->A01:Ljava/lang/Integer;
+
+    .line 77
+    if-eqz v1, :cond_5a
+
+    .line 79
+    invoke-virtual {v1}, Ljava/lang/Number;->intValue()I
+
+    .line 82
+    move-result v0
+
+    .line 83
+    if-eq v0, v2, :cond_5a
+
+    .line 85
+    const-string v0, "refresh_side"
+
+    .line 87
+    invoke-interface {v3, v0, v1}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+
+    .line 90
+    :cond_5a
+    const-string v1, "refresh_total_duration_ms"
+
+    .line 92
+    iget-object v0, p0, LX/FpA;->A07:Ljava/lang/Long;
+
+    .line 94
+    invoke-interface {v3, v1, v0}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+
+    .line 97
+    return-object v3
+.end method
+
+.method public getFieldsMapForLogging()Ljava/util/Map;
+    .registers 2
+
+    .line 0
+    const/4 v0, 0x0
+
+    .line 1
+    return-object v0
+.end method
+
+.method public internalFalcoMigrationBatchNumber()I
+    .registers 2
+
+    .line 0
+    const/16 v0, 0x10
+
+    .line 2
+    return v0
+.end method
+
+.method public serialize(LX/3Ze;)V
+    .registers 3
+
+    .line 0
+    invoke-static {}, LX/1U7;->A0j()Ljava/lang/NullPointerException;
+
+    .line 3
+    move-result-object v0
+
+    .line 4
+    throw v0
+.end method
+
+.method public toString()Ljava/lang/String;
+    .registers 4
+
+    .line 0
+    invoke-static {}, LX/1U7;->A10()Ljava/lang/StringBuilder;
+
+    .line 3
+    move-result-object v2
+
+    .line 4
+    const-string v0, "WamCompanionContactRefresh {"
+
+    .line 6
+    invoke-virtual {v2, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    .line 9
+    const-string v1, "contactAddedCount"
+
+    .line 11
+    iget-object v0, p0, LX/FpA;->A02:Ljava/lang/Long;
+
+    .line 13
+    invoke-static {v2, v1, v0}, LX/0Fj;->A00(Ljava/lang/StringBuilder;Ljava/lang/String;Ljava/lang/Object;)V
+
+    .line 16
+    const-string v1, "contactEditedCount"
+
+    .line 18
+    iget-object v0, p0, LX/FpA;->A03:Ljava/lang/Long;
+
+    .line 20
+    invoke-static {v2, v1, v0}, LX/0Fj;->A00(Ljava/lang/StringBuilder;Ljava/lang/String;Ljava/lang/Object;)V
+
+    .line 23
+    const-string v1, "contactUploadedCount"
+
+    .line 25
+    iget-object v0, p0, LX/FpA;->A04:Ljava/lang/Long;
+
+    .line 27
+    invoke-static {v2, v1, v0}, LX/0Fj;->A00(Ljava/lang/StringBuilder;Ljava/lang/String;Ljava/lang/Object;)V
+
+    .line 30
+    const-string v1, "dedupKey"
+
+    .line 32
+    iget-object v0, p0, LX/FpA;->dedupKey:Ljava/lang/Long;
+
+    .line 34
+    invoke-static {v2, v1, v0}, LX/0Fj;->A00(Ljava/lang/StringBuilder;Ljava/lang/String;Ljava/lang/Object;)V
+
+    .line 37
+    const-string v1, "primaryDurationMs"
+
+    .line 39
+    iget-object v0, p0, LX/FpA;->A05:Ljava/lang/Long;
+
+    .line 41
+    invoke-static {v2, v1, v0}, LX/0Fj;->A00(Ljava/lang/StringBuilder;Ljava/lang/String;Ljava/lang/Object;)V
+
+    .line 44
+    const-string v1, "refreshApplyDurationMs"
+
+    .line 46
+    iget-object v0, p0, LX/FpA;->A06:Ljava/lang/Long;
+
+    .line 48
+    invoke-static {v2, v1, v0}, LX/0Fj;->A00(Ljava/lang/StringBuilder;Ljava/lang/String;Ljava/lang/Object;)V
+
+    .line 51
+    iget-object v0, p0, LX/FpA;->A00:Ljava/lang/Integer;
+
+    .line 53
+    invoke-static {v0}, LX/1U7;->A0n(Ljava/lang/Number;)Ljava/lang/String;
+
+    .line 56
+    move-result-object v1
+
+    .line 57
+    const-string v0, "refreshEventType"
+
+    .line 59
+    invoke-static {v2, v0, v1}, LX/0Fj;->A00(Ljava/lang/StringBuilder;Ljava/lang/String;Ljava/lang/Object;)V
+
+    .line 62
+    const-string v1, "refreshId"
+
+    .line 64
+    iget-object v0, p0, LX/FpA;->A08:Ljava/lang/String;
+
+    .line 66
+    invoke-static {v2, v1, v0}, LX/0Fj;->A00(Ljava/lang/StringBuilder;Ljava/lang/String;Ljava/lang/Object;)V
+
+    .line 69
+    iget-object v0, p0, LX/FpA;->A01:Ljava/lang/Integer;
+
+    .line 71
+    invoke-static {v0}, LX/1U7;->A0n(Ljava/lang/Number;)Ljava/lang/String;
+
+    .line 74
+    move-result-object v1
+
+    .line 75
+    const-string v0, "refreshSide"
+
+    .line 77
+    invoke-static {v2, v0, v1}, LX/0Fj;->A00(Ljava/lang/StringBuilder;Ljava/lang/String;Ljava/lang/Object;)V
+
+    .line 80
+    const-string v1, "refreshTotalDurationMs"
+
+    .line 82
+    iget-object v0, p0, LX/FpA;->A07:Ljava/lang/Long;
+
+    .line 84
+    invoke-static {v0, v1, v2}, LX/1U7;->A0q(Ljava/lang/Object;Ljava/lang/String;Ljava/lang/StringBuilder;)Ljava/lang/String;
+
+    .line 87
+    move-result-object v0
+
+    .line 88
+    return-object v0
+.end method

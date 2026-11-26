@@ -1,0 +1,601 @@
+.class public final LX/4BS;
+.super LX/4t7;
+.source ""
+
+
+# static fields
+.field public static final CREATOR:Landroid/os/Parcelable$Creator;
+
+
+# instance fields
+.field public final A00:LX/4ON;
+
+.field public final A01:LX/4OL;
+
+.field public final A02:LX/UBl;
+
+.field public final A03:LX/4t0;
+
+.field public final A04:LX/4t1;
+
+.field public final A05:Ljava/lang/String;
+
+.field public final A06:Ljava/lang/String;
+
+.field public final A07:Ljava/util/Date;
+
+.field public final A08:Ljava/util/List;
+
+.field public final A09:Ljava/util/List;
+
+.field public final A0A:LX/4OS;
+
+
+# direct methods
+.method public static constructor <clinit>()V
+    .registers 1
+
+    .line 0
+    new-instance v0, LX/4sU;
+
+    .line 2
+    invoke-direct {v0}, Ljava/lang/Object;-><init>()V
+
+    .line 5
+    sput-object v0, LX/4BS;->CREATOR:Landroid/os/Parcelable$Creator;
+
+    .line 7
+    return-void
+.end method
+
+.method public constructor <init>(LX/4OS;LX/4ON;LX/4OL;LX/UBl;LX/4t0;LX/4t1;Ljava/lang/String;Ljava/lang/String;Ljava/util/Date;Ljava/util/List;Ljava/util/List;)V
+    .registers 13
+
+    .line 0
+    invoke-static {p2, p4}, LX/3dF;->A1E(Ljava/lang/Object;Ljava/lang/Object;)V
+
+    .line 3
+    const/4 v0, 0x4
+
+    .line 4
+    invoke-static {p8, v0, p10}, LX/3dD;->A1R(Ljava/lang/Object;ILjava/lang/Object;)V
+
+    .line 7
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    .line 10
+    iput-object p2, p0, LX/4BS;->A00:LX/4ON;
+
+    .line 12
+    iput-object p1, p0, LX/4BS;->A0A:LX/4OS;
+
+    .line 14
+    iput-object p4, p0, LX/4BS;->A02:LX/UBl;
+
+    .line 16
+    iput-object p7, p0, LX/4BS;->A05:Ljava/lang/String;
+
+    .line 18
+    iput-object p8, p0, LX/4BS;->A06:Ljava/lang/String;
+
+    .line 20
+    iput-object p6, p0, LX/4BS;->A04:LX/4t1;
+
+    .line 22
+    iput-object p3, p0, LX/4BS;->A01:LX/4OL;
+
+    .line 24
+    iput-object p9, p0, LX/4BS;->A07:Ljava/util/Date;
+
+    .line 26
+    iput-object p5, p0, LX/4BS;->A03:LX/4t0;
+
+    .line 28
+    iput-object p10, p0, LX/4BS;->A09:Ljava/util/List;
+
+    .line 30
+    iput-object p11, p0, LX/4BS;->A08:Ljava/util/List;
+
+    .line 32
+    return-void
+.end method
+
+
+# virtual methods
+.method public final describeContents()I
+    .registers 2
+
+    .line 0
+    const/4 v0, 0x0
+
+    .line 1
+    return v0
+.end method
+
+.method public equals(Ljava/lang/Object;)Z
+    .registers 6
+
+    .line 0
+    const/4 v3, 0x1
+
+    .line 1
+    if-eq p0, p1, :cond_69
+
+    .line 3
+    instance-of v0, p1, LX/4BS;
+
+    .line 5
+    const/4 v2, 0x0
+
+    .line 6
+    if-eqz v0, :cond_68
+
+    .line 8
+    check-cast p1, LX/4BS;
+
+    .line 10
+    iget-object v1, p0, LX/4BS;->A00:LX/4ON;
+
+    .line 12
+    iget-object v0, p1, LX/4BS;->A00:LX/4ON;
+
+    .line 14
+    if-ne v1, v0, :cond_68
+
+    .line 16
+    iget-object v1, p0, LX/4BS;->A0A:LX/4OS;
+
+    .line 18
+    iget-object v0, p1, LX/4BS;->A0A:LX/4OS;
+
+    .line 20
+    if-ne v1, v0, :cond_68
+
+    .line 22
+    iget-object v1, p0, LX/4BS;->A02:LX/UBl;
+
+    .line 24
+    iget-object v0, p1, LX/4BS;->A02:LX/UBl;
+
+    .line 26
+    if-ne v1, v0, :cond_68
+
+    .line 28
+    iget-object v1, p0, LX/4BS;->A05:Ljava/lang/String;
+
+    .line 30
+    iget-object v0, p1, LX/4BS;->A05:Ljava/lang/String;
+
+    .line 32
+    invoke-static {v1, v0}, LX/00m;->areEqual(Ljava/lang/Object;Ljava/lang/Object;)Z
+
+    .line 35
+    move-result v0
+
+    .line 36
+    if-eqz v0, :cond_68
+
+    .line 38
+    iget-object v1, p0, LX/4BS;->A06:Ljava/lang/String;
+
+    .line 40
+    iget-object v0, p1, LX/4BS;->A06:Ljava/lang/String;
+
+    .line 42
+    invoke-static {v1, v0}, LX/00m;->areEqual(Ljava/lang/Object;Ljava/lang/Object;)Z
+
+    .line 45
+    move-result v0
+
+    .line 46
+    if-eqz v0, :cond_68
+
+    .line 48
+    iget-object v1, p0, LX/4BS;->A04:LX/4t1;
+
+    .line 50
+    iget-object v0, p1, LX/4BS;->A04:LX/4t1;
+
+    .line 52
+    invoke-static {v1, v0}, LX/00m;->areEqual(Ljava/lang/Object;Ljava/lang/Object;)Z
+
+    .line 55
+    move-result v0
+
+    .line 56
+    if-eqz v0, :cond_68
+
+    .line 58
+    iget-object v1, p0, LX/4BS;->A01:LX/4OL;
+
+    .line 60
+    iget-object v0, p1, LX/4BS;->A01:LX/4OL;
+
+    .line 62
+    if-ne v1, v0, :cond_68
+
+    .line 64
+    iget-object v1, p0, LX/4BS;->A07:Ljava/util/Date;
+
+    .line 66
+    iget-object v0, p1, LX/4BS;->A07:Ljava/util/Date;
+
+    .line 68
+    invoke-static {v1, v0}, LX/00m;->areEqual(Ljava/lang/Object;Ljava/lang/Object;)Z
+
+    .line 71
+    move-result v0
+
+    .line 72
+    if-eqz v0, :cond_68
+
+    .line 74
+    iget-object v1, p0, LX/4BS;->A03:LX/4t0;
+
+    .line 76
+    iget-object v0, p1, LX/4BS;->A03:LX/4t0;
+
+    .line 78
+    invoke-static {v1, v0}, LX/00m;->areEqual(Ljava/lang/Object;Ljava/lang/Object;)Z
+
+    .line 81
+    move-result v0
+
+    .line 82
+    if-eqz v0, :cond_68
+
+    .line 84
+    iget-object v1, p0, LX/4BS;->A09:Ljava/util/List;
+
+    .line 86
+    iget-object v0, p1, LX/4BS;->A09:Ljava/util/List;
+
+    .line 88
+    invoke-static {v1, v0}, LX/00m;->areEqual(Ljava/lang/Object;Ljava/lang/Object;)Z
+
+    .line 91
+    move-result v0
+
+    .line 92
+    if-eqz v0, :cond_68
+
+    .line 94
+    iget-object v1, p0, LX/4BS;->A08:Ljava/util/List;
+
+    .line 96
+    iget-object v0, p1, LX/4BS;->A08:Ljava/util/List;
+
+    .line 98
+    invoke-static {v1, v0}, LX/00m;->areEqual(Ljava/lang/Object;Ljava/lang/Object;)Z
+
+    .line 101
+    move-result v0
+
+    .line 102
+    if-nez v0, :cond_69
+
+    .line 104
+    :cond_68
+    return v2
+
+    .line 105
+    :cond_69
+    return v3
+.end method
+
+.method public hashCode()I
+    .registers 3
+
+    .line 0
+    iget-object v0, p0, LX/4BS;->A00:LX/4ON;
+
+    .line 2
+    invoke-static {v0}, LX/1U7;->A0B(Ljava/lang/Object;)I
+
+    .line 5
+    move-result v1
+
+    .line 6
+    iget-object v0, p0, LX/4BS;->A0A:LX/4OS;
+
+    .line 8
+    invoke-static {v0}, LX/1U7;->A0C(Ljava/lang/Object;)I
+
+    .line 11
+    move-result v0
+
+    .line 12
+    add-int/2addr v1, v0
+
+    .line 13
+    mul-int/lit8 v1, v1, 0x1f
+
+    .line 15
+    iget-object v0, p0, LX/4BS;->A02:LX/UBl;
+
+    .line 17
+    invoke-static {v0, v1}, LX/1U7;->A0E(Ljava/lang/Object;I)I
+
+    .line 20
+    move-result v1
+
+    .line 21
+    iget-object v0, p0, LX/4BS;->A05:Ljava/lang/String;
+
+    .line 23
+    invoke-static {v0}, LX/1U7;->A0F(Ljava/lang/String;)I
+
+    .line 26
+    move-result v0
+
+    .line 27
+    add-int/2addr v1, v0
+
+    .line 28
+    mul-int/lit8 v1, v1, 0x1f
+
+    .line 30
+    iget-object v0, p0, LX/4BS;->A06:Ljava/lang/String;
+
+    .line 32
+    invoke-static {v0, v1}, LX/1U7;->A0G(Ljava/lang/String;I)I
+
+    .line 35
+    move-result v1
+
+    .line 36
+    iget-object v0, p0, LX/4BS;->A04:LX/4t1;
+
+    .line 38
+    invoke-static {v0}, LX/1U7;->A0C(Ljava/lang/Object;)I
+
+    .line 41
+    move-result v0
+
+    .line 42
+    add-int/2addr v1, v0
+
+    .line 43
+    mul-int/lit8 v1, v1, 0x1f
+
+    .line 45
+    iget-object v0, p0, LX/4BS;->A01:LX/4OL;
+
+    .line 47
+    invoke-static {v0}, LX/1U7;->A0C(Ljava/lang/Object;)I
+
+    .line 50
+    move-result v0
+
+    .line 51
+    add-int/2addr v1, v0
+
+    .line 52
+    mul-int/lit8 v1, v1, 0x1f
+
+    .line 54
+    iget-object v0, p0, LX/4BS;->A07:Ljava/util/Date;
+
+    .line 56
+    invoke-static {v0}, LX/1U7;->A0C(Ljava/lang/Object;)I
+
+    .line 59
+    move-result v0
+
+    .line 60
+    add-int/2addr v1, v0
+
+    .line 61
+    mul-int/lit8 v1, v1, 0x1f
+
+    .line 63
+    iget-object v0, p0, LX/4BS;->A03:LX/4t0;
+
+    .line 65
+    invoke-static {v0}, LX/1U7;->A0D(Ljava/lang/Object;)I
+
+    .line 68
+    move-result v0
+
+    .line 69
+    add-int/2addr v1, v0
+
+    .line 70
+    mul-int/lit8 v1, v1, 0x1f
+
+    .line 72
+    iget-object v0, p0, LX/4BS;->A09:Ljava/util/List;
+
+    .line 74
+    invoke-static {v0, v1}, LX/1U7;->A0E(Ljava/lang/Object;I)I
+
+    .line 77
+    move-result v1
+
+    .line 78
+    iget-object v0, p0, LX/4BS;->A08:Ljava/util/List;
+
+    .line 80
+    invoke-static {v0, v1}, LX/2Ag;->A01(Ljava/lang/Object;I)I
+
+    .line 83
+    move-result v0
+
+    .line 84
+    return v0
+.end method
+
+.method public toString()Ljava/lang/String;
+    .registers 14
+
+    .line 0
+    iget-object v12, p0, LX/4BS;->A00:LX/4ON;
+
+    .line 2
+    iget-object v11, p0, LX/4BS;->A0A:LX/4OS;
+
+    .line 4
+    iget-object v10, p0, LX/4BS;->A02:LX/UBl;
+
+    .line 6
+    iget-object v9, p0, LX/4BS;->A05:Ljava/lang/String;
+
+    .line 8
+    iget-object v8, p0, LX/4BS;->A06:Ljava/lang/String;
+
+    .line 10
+    iget-object v7, p0, LX/4BS;->A04:LX/4t1;
+
+    .line 12
+    iget-object v6, p0, LX/4BS;->A01:LX/4OL;
+
+    .line 14
+    iget-object v5, p0, LX/4BS;->A07:Ljava/util/Date;
+
+    .line 16
+    iget-object v4, p0, LX/4BS;->A03:LX/4t0;
+
+    .line 18
+    iget-object v3, p0, LX/4BS;->A09:Ljava/util/List;
+
+    .line 20
+    iget-object v2, p0, LX/4BS;->A08:Ljava/util/List;
+
+    .line 22
+    const-string v0, "Geosuspension(appealState="
+
+    .line 24
+    invoke-static {v0}, LX/2Ac;->A14(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    .line 27
+    move-result-object v1
+
+    .line 28
+    invoke-static {v12, v11, v10, v9, v1}, LX/4t7;->A04(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/String;Ljava/lang/StringBuilder;)V
+
+    .line 31
+    invoke-static {v7, v6, v5, v8, v1}, LX/4t7;->A03(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/String;Ljava/lang/StringBuilder;)V
+
+    .line 34
+    invoke-virtual {v1, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+
+    .line 37
+    const-string v0, ", countryCodeList="
+
+    .line 39
+    invoke-virtual {v1, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    .line 42
+    invoke-virtual {v1, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+
+    .line 45
+    const-string v0, ", appealReasonOptions="
+
+    .line 47
+    invoke-static {v2, v0, v1}, LX/1U7;->A0p(Ljava/lang/Object;Ljava/lang/String;Ljava/lang/StringBuilder;)Ljava/lang/String;
+
+    .line 50
+    move-result-object v0
+
+    .line 51
+    return-object v0
+.end method
+
+.method public final writeToParcel(Landroid/os/Parcel;I)V
+    .registers 5
+
+    .line 0
+    const/4 v0, 0x0
+
+    .line 1
+    invoke-static {p1, v0}, LX/00m;->A09(Ljava/lang/Object;I)V
+
+    .line 4
+    iget-object v0, p0, LX/4BS;->A00:LX/4ON;
+
+    .line 6
+    invoke-static {p1, v0}, LX/3dB;->A1G(Landroid/os/Parcel;Ljava/lang/Enum;)V
+
+    .line 9
+    iget-object v0, p0, LX/4BS;->A0A:LX/4OS;
+
+    .line 11
+    invoke-static {p1, v0}, LX/3dG;->A0j(Landroid/os/Parcel;Ljava/lang/Enum;)V
+
+    .line 14
+    iget-object v0, p0, LX/4BS;->A02:LX/UBl;
+
+    .line 16
+    invoke-static {p1, v0}, LX/3dB;->A1G(Landroid/os/Parcel;Ljava/lang/Enum;)V
+
+    .line 19
+    iget-object v0, p0, LX/4BS;->A05:Ljava/lang/String;
+
+    .line 21
+    invoke-virtual {p1, v0}, Landroid/os/Parcel;->writeString(Ljava/lang/String;)V
+
+    .line 24
+    iget-object v0, p0, LX/4BS;->A06:Ljava/lang/String;
+
+    .line 26
+    invoke-virtual {p1, v0}, Landroid/os/Parcel;->writeString(Ljava/lang/String;)V
+
+    .line 29
+    iget-object v0, p0, LX/4BS;->A04:LX/4t1;
+
+    .line 31
+    invoke-static {p1, v0, p2}, LX/4t7;->A01(Landroid/os/Parcel;LX/4t1;I)V
+
+    .line 34
+    iget-object v0, p0, LX/4BS;->A01:LX/4OL;
+
+    .line 36
+    invoke-static {p1, v0}, LX/3dG;->A0j(Landroid/os/Parcel;Ljava/lang/Enum;)V
+
+    .line 39
+    iget-object v0, p0, LX/4BS;->A07:Ljava/util/Date;
+
+    .line 41
+    invoke-virtual {p1, v0}, Landroid/os/Parcel;->writeSerializable(Ljava/io/Serializable;)V
+
+    .line 44
+    iget-object v0, p0, LX/4BS;->A03:LX/4t0;
+
+    .line 46
+    invoke-static {p1, v0, p2}, LX/4t7;->A00(Landroid/os/Parcel;LX/4t0;I)V
+
+    .line 49
+    iget-object v0, p0, LX/4BS;->A09:Ljava/util/List;
+
+    .line 51
+    invoke-virtual {p1, v0}, Landroid/os/Parcel;->writeStringList(Ljava/util/List;)V
+
+    .line 54
+    iget-object v0, p0, LX/4BS;->A08:Ljava/util/List;
+
+    .line 56
+    invoke-static {p1, v0}, LX/3dE;->A0x(Landroid/os/Parcel;Ljava/util/List;)Ljava/util/Iterator;
+
+    .line 59
+    move-result-object v1
+
+    .line 60
+    :goto_3c
+    invoke-interface {v1}, Ljava/util/Iterator;->hasNext()Z
+
+    .line 63
+    move-result v0
+
+    .line 64
+    if-eqz v0, :cond_46
+
+    .line 66
+    invoke-static {p1, v1, p2}, LX/4t7;->A02(Landroid/os/Parcel;Ljava/util/Iterator;I)V
+
+    .line 69
+    goto :goto_3c
+
+    .line 70
+    :cond_46
+    return-void
+.end method

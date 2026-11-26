@@ -1,0 +1,222 @@
+.class public final LX/NG8;
+.super LX/0qC;
+.source ""
+
+# interfaces
+.implements LX/QZ6;
+
+
+# virtual methods
+.method public Ako()[B
+    .registers 3
+
+    .line 0
+    iget-object v1, p0, LX/0qC;->A00:LX/0py;
+
+    .line 2
+    const v0, 0x2eefaa
+
+    .line 5
+    invoke-interface {v1, v0}, LX/0pw;->BFA(I)Ljava/lang/String;
+
+    .line 8
+    move-result-object v1
+
+    .line 9
+    const/4 v0, 0x0
+
+    .line 10
+    invoke-static {v1, v0}, Landroid/util/Base64;->decode(Ljava/lang/String;I)[B
+
+    .line 13
+    move-result-object v0
+
+    .line 14
+    if-eqz v0, :cond_11
+
+    .line 16
+    return-object v0
+
+    .line 17
+    :cond_11
+    const-string v0, "Unable to decode rawString."
+
+    .line 19
+    invoke-static {v0}, LX/1U7;->A0c(Ljava/lang/String;)Ljava/lang/IllegalArgumentException;
+
+    .line 22
+    move-result-object v0
+
+    .line 23
+    throw v0
+.end method
+
+.method public Axw()[B
+    .registers 3
+
+    .line 0
+    iget-object v1, p0, LX/0qC;->A00:LX/0py;
+
+    .line 2
+    const v0, 0x19e5f
+
+    .line 5
+    invoke-interface {v1, v0}, LX/0pw;->BFA(I)Ljava/lang/String;
+
+    .line 8
+    move-result-object v1
+
+    .line 9
+    const/4 v0, 0x0
+
+    .line 10
+    invoke-static {v1, v0}, Landroid/util/Base64;->decode(Ljava/lang/String;I)[B
+
+    .line 13
+    move-result-object v0
+
+    .line 14
+    if-eqz v0, :cond_11
+
+    .line 16
+    return-object v0
+
+    .line 17
+    :cond_11
+    const-string v0, "Unable to decode rawString."
+
+    .line 19
+    invoke-static {v0}, LX/1U7;->A0c(Ljava/lang/String;)Ljava/lang/IllegalArgumentException;
+
+    .line 22
+    move-result-object v0
+
+    .line 23
+    throw v0
+.end method
+
+.method public B53()[B
+    .registers 3
+
+    .line 0
+    iget-object v1, p0, LX/0qC;->A00:LX/0py;
+
+    .line 2
+    const v0, 0x64237ef
+
+    .line 5
+    invoke-interface {v1, v0}, LX/0pw;->BFA(I)Ljava/lang/String;
+
+    .line 8
+    move-result-object v1
+
+    .line 9
+    const/4 v0, 0x0
+
+    .line 10
+    invoke-static {v1, v0}, Landroid/util/Base64;->decode(Ljava/lang/String;I)[B
+
+    .line 13
+    move-result-object v0
+
+    .line 14
+    if-eqz v0, :cond_11
+
+    .line 16
+    return-object v0
+
+    .line 17
+    :cond_11
+    const-string v0, "Unable to decode rawString."
+
+    .line 19
+    invoke-static {v0}, LX/1U7;->A0c(Ljava/lang/String;)Ljava/lang/IllegalArgumentException;
+
+    .line 22
+    move-result-object v0
+
+    .line 23
+    throw v0
+.end method
+
+.method public BNA()[B
+    .registers 3
+
+    .line 0
+    iget-object v1, p0, LX/0qC;->A00:LX/0py;
+
+    .line 2
+    const v0, 0x1bf9a
+
+    .line 5
+    invoke-interface {v1, v0}, LX/0pw;->BFA(I)Ljava/lang/String;
+
+    .line 8
+    move-result-object v1
+
+    .line 9
+    const/4 v0, 0x0
+
+    .line 10
+    invoke-static {v1, v0}, Landroid/util/Base64;->decode(Ljava/lang/String;I)[B
+
+    .line 13
+    move-result-object v0
+
+    .line 14
+    if-eqz v0, :cond_11
+
+    .line 16
+    return-object v0
+
+    .line 17
+    :cond_11
+    const-string v0, "Unable to decode rawString."
+
+    .line 19
+    invoke-static {v0}, LX/1U7;->A0c(Ljava/lang/String;)Ljava/lang/IllegalArgumentException;
+
+    .line 22
+    move-result-object v0
+
+    .line 23
+    throw v0
+.end method
+
+.method public getAlgorithm()Ljava/lang/String;
+    .registers 3
+
+    .line 0
+    iget-object v1, p0, LX/0qC;->A00:LX/0py;
+
+    .line 2
+    const v0, 0xd70b46f
+
+    .line 5
+    invoke-interface {v1, v0}, LX/0pw;->BFA(I)Ljava/lang/String;
+
+    .line 8
+    move-result-object v0
+
+    .line 9
+    return-object v0
+.end method
+
+.method public getVersion()Ljava/lang/String;
+    .registers 3
+
+    .line 0
+    iget-object v1, p0, LX/0qC;->A00:LX/0py;
+
+    .line 2
+    const v0, 0x14f51cd8
+
+    .line 5
+    invoke-interface {v1, v0}, LX/0pw;->BFA(I)Ljava/lang/String;
+
+    .line 8
+    move-result-object v0
+
+    .line 9
+    return-object v0
+.end method

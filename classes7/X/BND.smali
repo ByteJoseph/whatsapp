@@ -1,0 +1,807 @@
+.class public final LX/BND;
+.super LX/0Fh;
+.source ""
+
+
+# instance fields
+.field public A00:Ljava/lang/Boolean;
+
+.field public A01:Ljava/lang/Boolean;
+
+.field public A02:Ljava/lang/Boolean;
+
+.field public A03:Ljava/lang/Boolean;
+
+.field public A04:Ljava/lang/Boolean;
+
+.field public A05:Ljava/lang/Boolean;
+
+.field public A06:Ljava/lang/Boolean;
+
+.field public A07:Ljava/lang/Boolean;
+
+.field public A08:Ljava/lang/Boolean;
+
+.field public A09:Ljava/lang/Boolean;
+
+.field public A0A:Ljava/lang/Integer;
+
+.field public A0B:Ljava/lang/Integer;
+
+.field public A0C:Ljava/lang/Integer;
+
+.field public A0D:Ljava/lang/Integer;
+
+.field public dedupKey:Ljava/lang/Long;
+
+
+# direct methods
+.method public constructor <init>()V
+    .registers 5
+
+    .line 0
+    const/4 v0, 0x1
+
+    .line 1
+    const/4 v3, 0x0
+
+    .line 2
+    invoke-static {v0}, LX/2Ac;->A0p(I)LX/012;
+
+    .line 5
+    move-result-object v2
+
+    .line 6
+    const/4 v1, -0x1
+
+    .line 7
+    const/16 v0, 0xe64
+
+    .line 9
+    invoke-direct {p0, v0, v2, v3, v1}, LX/0Fh;-><init>(ILX/012;II)V
+
+    .line 12
+    return-void
+.end method
+
+
+# virtual methods
+.method public getEventNameForFalco()Ljava/lang/String;
+    .registers 2
+
+    .line 0
+    const-string v0, "wam_notification_setting"
+
+    .line 2
+    return-object v0
+.end method
+
+.method public getFieldsMap()Ljava/util/Map;
+    .registers 4
+
+    .line 0
+    invoke-static {}, LX/1U7;->A18()Ljava/util/LinkedHashMap;
+
+    .line 3
+    move-result-object v2
+
+    .line 4
+    const/16 v0, 0x19
+
+    .line 6
+    invoke-static {v2, v0}, LX/1U7;->A0l(Ljava/util/Map;I)Ljava/lang/Object;
+
+    .line 9
+    move-result-object v1
+
+    .line 10
+    const/16 v0, 0x1a
+
+    .line 12
+    invoke-static {v1, v2, v0}, LX/1U7;->A1N(Ljava/lang/Object;Ljava/util/Map;I)V
+
+    .line 15
+    const/16 v0, 0x18
+
+    .line 17
+    invoke-static {v0}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    .line 20
+    move-result-object v1
+
+    .line 21
+    iget-object v0, p0, LX/BND;->dedupKey:Ljava/lang/Long;
+
+    .line 23
+    invoke-static {v1, v0, v2}, LX/2Aj;->A0b(Ljava/lang/Object;Ljava/lang/Object;Ljava/util/Map;)Ljava/lang/Integer;
+
+    .line 26
+    move-result-object v1
+
+    .line 27
+    iget-object v0, p0, LX/BND;->A00:Ljava/lang/Boolean;
+
+    .line 29
+    invoke-static {v1, v0, v2}, LX/1U7;->A0e(Ljava/lang/Object;Ljava/lang/Object;Ljava/util/Map;)Ljava/lang/Integer;
+
+    .line 32
+    move-result-object v1
+
+    .line 33
+    iget-object v0, p0, LX/BND;->A01:Ljava/lang/Boolean;
+
+    .line 35
+    invoke-static {v1, v0, v2}, LX/1U7;->A0f(Ljava/lang/Object;Ljava/lang/Object;Ljava/util/Map;)Ljava/lang/Integer;
+
+    .line 38
+    move-result-object v1
+
+    .line 39
+    iget-object v0, p0, LX/BND;->A0A:Ljava/lang/Integer;
+
+    .line 41
+    invoke-static {v1, v0, v2}, LX/1U7;->A0g(Ljava/lang/Object;Ljava/lang/Object;Ljava/util/Map;)Ljava/lang/Integer;
+
+    .line 44
+    move-result-object v0
+
+    .line 45
+    const/4 v1, 0x0
+
+    .line 46
+    invoke-static {v0, v1, v2}, LX/1U7;->A0h(Ljava/lang/Object;Ljava/lang/Object;Ljava/util/Map;)Ljava/lang/Integer;
+
+    .line 49
+    move-result-object v0
+
+    .line 50
+    invoke-static {v0, v1, v2}, LX/2Af;->A0h(Ljava/lang/Object;Ljava/lang/Object;Ljava/util/Map;)Ljava/lang/Integer;
+
+    .line 53
+    move-result-object v0
+
+    .line 54
+    invoke-static {v0, v1, v2}, LX/2Af;->A0i(Ljava/lang/Object;Ljava/lang/Object;Ljava/util/Map;)Ljava/lang/Integer;
+
+    .line 57
+    move-result-object v1
+
+    .line 58
+    iget-object v0, p0, LX/BND;->A02:Ljava/lang/Boolean;
+
+    .line 60
+    invoke-static {v1, v0, v2}, LX/1U7;->A0i(Ljava/lang/Object;Ljava/lang/Object;Ljava/util/Map;)Ljava/lang/Integer;
+
+    .line 63
+    move-result-object v1
+
+    .line 64
+    iget-object v0, p0, LX/BND;->A03:Ljava/lang/Boolean;
+
+    .line 66
+    invoke-static {v1, v0, v2}, LX/2Af;->A0j(Ljava/lang/Object;Ljava/lang/Object;Ljava/util/Map;)Ljava/lang/Integer;
+
+    .line 69
+    move-result-object v1
+
+    .line 70
+    iget-object v0, p0, LX/BND;->A0B:Ljava/lang/Integer;
+
+    .line 72
+    invoke-static {v1, v0, v2}, LX/2Af;->A0l(Ljava/lang/Object;Ljava/lang/Object;Ljava/util/Map;)Ljava/lang/Integer;
+
+    .line 75
+    move-result-object v0
+
+    .line 76
+    const/4 v1, 0x0
+
+    .line 77
+    invoke-static {v0, v1, v2}, LX/8cY;->A0i(Ljava/lang/Object;Ljava/lang/Object;Ljava/util/Map;)Ljava/lang/Integer;
+
+    .line 80
+    move-result-object v0
+
+    .line 81
+    invoke-static {v0, v1, v2}, LX/8cY;->A0j(Ljava/lang/Object;Ljava/lang/Object;Ljava/util/Map;)Ljava/lang/Integer;
+
+    .line 84
+    move-result-object v0
+
+    .line 85
+    invoke-static {v0, v1, v2}, LX/8cY;->A0k(Ljava/lang/Object;Ljava/lang/Object;Ljava/util/Map;)Ljava/lang/Integer;
+
+    .line 88
+    move-result-object v0
+
+    .line 89
+    invoke-static {v0, v1, v2}, LX/8cZ;->A0l(Ljava/lang/Object;Ljava/lang/Object;Ljava/util/Map;)Ljava/lang/Integer;
+
+    .line 92
+    move-result-object v0
+
+    .line 93
+    invoke-static {v0, v1, v2}, LX/8cY;->A0h(Ljava/lang/Object;Ljava/lang/Object;Ljava/util/Map;)Ljava/lang/Integer;
+
+    .line 96
+    move-result-object v1
+
+    .line 97
+    iget-object v0, p0, LX/BND;->A04:Ljava/lang/Boolean;
+
+    .line 99
+    invoke-interface {v2, v1, v0}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+
+    .line 102
+    const/16 v0, 0xa
+
+    .line 104
+    invoke-static {v0, v2}, LX/1U7;->A1C(ILjava/util/Map;)V
+
+    .line 107
+    invoke-static {}, LX/2Ah;->A11()Ljava/lang/Integer;
+
+    .line 110
+    move-result-object v1
+
+    .line 111
+    iget-object v0, p0, LX/BND;->A05:Ljava/lang/Boolean;
+
+    .line 113
+    invoke-static {v1, v0, v2}, LX/8cY;->A0e(Ljava/lang/Object;Ljava/lang/Object;Ljava/util/Map;)Ljava/lang/Integer;
+
+    .line 116
+    move-result-object v1
+
+    .line 117
+    iget-object v0, p0, LX/BND;->A06:Ljava/lang/Boolean;
+
+    .line 119
+    invoke-static {v1, v0, v2}, LX/8cY;->A0f(Ljava/lang/Object;Ljava/lang/Object;Ljava/util/Map;)Ljava/lang/Integer;
+
+    .line 122
+    move-result-object v1
+
+    .line 123
+    iget-object v0, p0, LX/BND;->A07:Ljava/lang/Boolean;
+
+    .line 125
+    invoke-static {v1, v0, v2}, LX/2Af;->A0m(Ljava/lang/Object;Ljava/lang/Object;Ljava/util/Map;)Ljava/lang/Integer;
+
+    .line 128
+    move-result-object v1
+
+    .line 129
+    iget-object v0, p0, LX/BND;->A08:Ljava/lang/Boolean;
+
+    .line 131
+    invoke-static {v1, v0, v2}, LX/AqZ;->A0i(Ljava/lang/Object;Ljava/lang/Object;Ljava/util/Map;)Ljava/lang/Integer;
+
+    .line 134
+    move-result-object v1
+
+    .line 135
+    iget-object v0, p0, LX/BND;->A09:Ljava/lang/Boolean;
+
+    .line 137
+    invoke-static {v1, v0, v2}, LX/8cY;->A0g(Ljava/lang/Object;Ljava/lang/Object;Ljava/util/Map;)Ljava/lang/Integer;
+
+    .line 140
+    move-result-object v1
+
+    .line 141
+    iget-object v0, p0, LX/BND;->A0C:Ljava/lang/Integer;
+
+    .line 143
+    invoke-static {v1, v0, v2}, LX/2Aj;->A0c(Ljava/lang/Object;Ljava/lang/Object;Ljava/util/Map;)Ljava/lang/Integer;
+
+    .line 146
+    move-result-object v1
+
+    .line 147
+    iget-object v0, p0, LX/BND;->A0D:Ljava/lang/Integer;
+
+    .line 149
+    invoke-interface {v2, v1, v0}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+
+    .line 152
+    return-object v2
+.end method
+
+.method public getFieldsMapForFalco()Ljava/util/Map;
+    .registers 5
+
+    .line 0
+    invoke-static {}, LX/1U7;->A18()Ljava/util/LinkedHashMap;
+
+    .line 3
+    move-result-object v2
+
+    .line 4
+    const-string v0, "call_notification_sound"
+
+    .line 6
+    const/4 v1, 0x0
+
+    .line 7
+    invoke-interface {v2, v0, v1}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+
+    .line 10
+    const-string v0, "call_show_notification"
+
+    .line 12
+    invoke-interface {v2, v0, v1}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+
+    .line 15
+    const-string v1, "dedup_key"
+
+    .line 17
+    iget-object v0, p0, LX/BND;->dedupKey:Ljava/lang/Long;
+
+    .line 19
+    invoke-interface {v2, v1, v0}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+
+    .line 22
+    const-string v1, "group_reaction_notification"
+
+    .line 24
+    iget-object v0, p0, LX/BND;->A00:Ljava/lang/Boolean;
+
+    .line 26
+    invoke-interface {v2, v1, v0}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+
+    .line 29
+    const-string v1, "group_show_notification"
+
+    .line 31
+    iget-object v0, p0, LX/BND;->A01:Ljava/lang/Boolean;
+
+    .line 33
+    invoke-interface {v2, v1, v0}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+
+    .line 36
+    iget-object v1, p0, LX/BND;->A0A:Ljava/lang/Integer;
+
+    .line 38
+    const/4 v3, -0x1
+
+    .line 39
+    if-eqz v1, :cond_36
+
+    .line 41
+    invoke-virtual {v1}, Ljava/lang/Number;->intValue()I
+
+    .line 44
+    move-result v0
+
+    .line 45
+    if-eqz v0, :cond_36
+
+    .line 47
+    if-eq v0, v3, :cond_36
+
+    .line 49
+    const-string v0, "group_sound_tone"
+
+    .line 51
+    invoke-interface {v2, v0, v1}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+
+    .line 54
+    :cond_36
+    const-string v0, "in_app_notification_sound"
+
+    .line 56
+    const/4 v1, 0x0
+
+    .line 57
+    invoke-interface {v2, v0, v1}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+
+    .line 60
+    const-string v0, "in_app_notification_vibrate"
+
+    .line 62
+    invoke-interface {v2, v0, v1}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+
+    .line 65
+    const-string v1, "message_reaction_notification"
+
+    .line 67
+    iget-object v0, p0, LX/BND;->A02:Ljava/lang/Boolean;
+
+    .line 69
+    invoke-interface {v2, v1, v0}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+
+    .line 72
+    const-string v1, "message_show_notification"
+
+    .line 74
+    iget-object v0, p0, LX/BND;->A03:Ljava/lang/Boolean;
+
+    .line 76
+    invoke-interface {v2, v1, v0}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+
+    .line 79
+    iget-object v1, p0, LX/BND;->A0B:Ljava/lang/Integer;
+
+    .line 81
+    if-eqz v1, :cond_60
+
+    .line 83
+    invoke-virtual {v1}, Ljava/lang/Number;->intValue()I
+
+    .line 86
+    move-result v0
+
+    .line 87
+    if-eqz v0, :cond_60
+
+    .line 89
+    if-eq v0, v3, :cond_60
+
+    .line 91
+    const-string v0, "message_sound_tone"
+
+    .line 93
+    invoke-interface {v2, v0, v1}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+
+    .line 96
+    :cond_60
+    const-string v0, "offline_notification"
+
+    .line 98
+    const/4 v1, 0x0
+
+    .line 99
+    invoke-interface {v2, v0, v1}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+
+    .line 102
+    const-string v0, "parental_control_account_updates"
+
+    .line 104
+    invoke-interface {v2, v0, v1}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+
+    .line 107
+    const-string v0, "parental_control_chats_and_contacts"
+
+    .line 109
+    invoke-interface {v2, v0, v1}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+
+    .line 112
+    const-string v0, "parental_control_disappearing_messages"
+
+    .line 114
+    invoke-interface {v2, v0, v1}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+
+    .line 117
+    const-string v0, "parental_control_groups"
+
+    .line 119
+    invoke-interface {v2, v0, v1}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+
+    .line 122
+    const-string v1, "recommended_channels_notification_setting"
+
+    .line 124
+    iget-object v0, p0, LX/BND;->A04:Ljava/lang/Boolean;
+
+    .line 126
+    invoke-interface {v2, v1, v0}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+
+    .line 129
+    const-string v1, "show_preview"
+
+    .line 131
+    const/4 v0, 0x0
+
+    .line 132
+    invoke-interface {v2, v1, v0}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+
+    .line 135
+    const-string v1, "status_notification_priority"
+
+    .line 137
+    iget-object v0, p0, LX/BND;->A05:Ljava/lang/Boolean;
+
+    .line 139
+    invoke-interface {v2, v1, v0}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+
+    .line 142
+    const-string v1, "status_notification_vibration"
+
+    .line 144
+    iget-object v0, p0, LX/BND;->A06:Ljava/lang/Boolean;
+
+    .line 146
+    invoke-interface {v2, v1, v0}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+
+    .line 149
+    const-string v1, "status_reaction_notification"
+
+    .line 151
+    iget-object v0, p0, LX/BND;->A07:Ljava/lang/Boolean;
+
+    .line 153
+    invoke-interface {v2, v1, v0}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+
+    .line 156
+    const-string v1, "status_reminder_notification"
+
+    .line 158
+    iget-object v0, p0, LX/BND;->A08:Ljava/lang/Boolean;
+
+    .line 160
+    invoke-interface {v2, v1, v0}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+
+    .line 163
+    const-string v1, "status_show_notification"
+
+    .line 165
+    iget-object v0, p0, LX/BND;->A09:Ljava/lang/Boolean;
+
+    .line 167
+    invoke-interface {v2, v1, v0}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+
+    .line 170
+    iget-object v1, p0, LX/BND;->A0C:Ljava/lang/Integer;
+
+    .line 172
+    if-eqz v1, :cond_bb
+
+    .line 174
+    invoke-virtual {v1}, Ljava/lang/Number;->intValue()I
+
+    .line 177
+    move-result v0
+
+    .line 178
+    if-eqz v0, :cond_bb
+
+    .line 180
+    if-eq v0, v3, :cond_bb
+
+    .line 182
+    const-string v0, "status_sound_tone"
+
+    .line 184
+    invoke-interface {v2, v0, v1}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+
+    .line 187
+    :cond_bb
+    iget-object v1, p0, LX/BND;->A0D:Ljava/lang/Integer;
+
+    .line 189
+    if-eqz v1, :cond_ca
+
+    .line 191
+    invoke-virtual {v1}, Ljava/lang/Number;->intValue()I
+
+    .line 194
+    move-result v0
+
+    .line 195
+    if-eq v0, v3, :cond_ca
+
+    .line 197
+    const-string v0, "unread_badge_setting"
+
+    .line 199
+    invoke-interface {v2, v0, v1}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+
+    .line 202
+    :cond_ca
+    return-object v2
+.end method
+
+.method public getFieldsMapForLogging()Ljava/util/Map;
+    .registers 2
+
+    .line 0
+    const/4 v0, 0x0
+
+    .line 1
+    return-object v0
+.end method
+
+.method public internalFalcoMigrationBatchNumber()I
+    .registers 2
+
+    .line 0
+    const/16 v0, 0x10
+
+    .line 2
+    return v0
+.end method
+
+.method public serialize(LX/3Ze;)V
+    .registers 3
+
+    .line 0
+    invoke-static {}, LX/1U7;->A0j()Ljava/lang/NullPointerException;
+
+    .line 3
+    move-result-object v0
+
+    .line 4
+    throw v0
+.end method
+
+.method public toString()Ljava/lang/String;
+    .registers 4
+
+    .line 0
+    invoke-static {}, LX/1U7;->A10()Ljava/lang/StringBuilder;
+
+    .line 3
+    move-result-object v2
+
+    .line 4
+    const-string v0, "WamNotificationSetting {"
+
+    .line 6
+    invoke-virtual {v2, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    .line 9
+    const-string v1, "dedupKey"
+
+    .line 11
+    iget-object v0, p0, LX/BND;->dedupKey:Ljava/lang/Long;
+
+    .line 13
+    invoke-static {v2, v1, v0}, LX/0Fj;->A00(Ljava/lang/StringBuilder;Ljava/lang/String;Ljava/lang/Object;)V
+
+    .line 16
+    const-string v1, "groupReactionNotification"
+
+    .line 18
+    iget-object v0, p0, LX/BND;->A00:Ljava/lang/Boolean;
+
+    .line 20
+    invoke-static {v2, v1, v0}, LX/0Fj;->A00(Ljava/lang/StringBuilder;Ljava/lang/String;Ljava/lang/Object;)V
+
+    .line 23
+    const-string v1, "groupShowNotification"
+
+    .line 25
+    iget-object v0, p0, LX/BND;->A01:Ljava/lang/Boolean;
+
+    .line 27
+    invoke-static {v2, v1, v0}, LX/0Fj;->A00(Ljava/lang/StringBuilder;Ljava/lang/String;Ljava/lang/Object;)V
+
+    .line 30
+    iget-object v0, p0, LX/BND;->A0A:Ljava/lang/Integer;
+
+    .line 32
+    invoke-static {v0}, LX/1U7;->A0n(Ljava/lang/Number;)Ljava/lang/String;
+
+    .line 35
+    move-result-object v1
+
+    .line 36
+    const-string v0, "groupSoundTone"
+
+    .line 38
+    invoke-static {v2, v0, v1}, LX/0Fj;->A00(Ljava/lang/StringBuilder;Ljava/lang/String;Ljava/lang/Object;)V
+
+    .line 41
+    const-string v1, "messageReactionNotification"
+
+    .line 43
+    iget-object v0, p0, LX/BND;->A02:Ljava/lang/Boolean;
+
+    .line 45
+    invoke-static {v2, v1, v0}, LX/0Fj;->A00(Ljava/lang/StringBuilder;Ljava/lang/String;Ljava/lang/Object;)V
+
+    .line 48
+    const-string v1, "messageShowNotification"
+
+    .line 50
+    iget-object v0, p0, LX/BND;->A03:Ljava/lang/Boolean;
+
+    .line 52
+    invoke-static {v2, v1, v0}, LX/0Fj;->A00(Ljava/lang/StringBuilder;Ljava/lang/String;Ljava/lang/Object;)V
+
+    .line 55
+    iget-object v0, p0, LX/BND;->A0B:Ljava/lang/Integer;
+
+    .line 57
+    invoke-static {v0}, LX/1U7;->A0n(Ljava/lang/Number;)Ljava/lang/String;
+
+    .line 60
+    move-result-object v1
+
+    .line 61
+    const-string v0, "messageSoundTone"
+
+    .line 63
+    invoke-static {v2, v0, v1}, LX/0Fj;->A00(Ljava/lang/StringBuilder;Ljava/lang/String;Ljava/lang/Object;)V
+
+    .line 66
+    const-string v1, "recommendedChannelsNotificationSetting"
+
+    .line 68
+    iget-object v0, p0, LX/BND;->A04:Ljava/lang/Boolean;
+
+    .line 70
+    invoke-static {v2, v1, v0}, LX/0Fj;->A00(Ljava/lang/StringBuilder;Ljava/lang/String;Ljava/lang/Object;)V
+
+    .line 73
+    const-string v1, "statusNotificationPriority"
+
+    .line 75
+    iget-object v0, p0, LX/BND;->A05:Ljava/lang/Boolean;
+
+    .line 77
+    invoke-static {v2, v1, v0}, LX/0Fj;->A00(Ljava/lang/StringBuilder;Ljava/lang/String;Ljava/lang/Object;)V
+
+    .line 80
+    const-string v1, "statusNotificationVibration"
+
+    .line 82
+    iget-object v0, p0, LX/BND;->A06:Ljava/lang/Boolean;
+
+    .line 84
+    invoke-static {v2, v1, v0}, LX/0Fj;->A00(Ljava/lang/StringBuilder;Ljava/lang/String;Ljava/lang/Object;)V
+
+    .line 87
+    const-string v1, "statusReactionNotification"
+
+    .line 89
+    iget-object v0, p0, LX/BND;->A07:Ljava/lang/Boolean;
+
+    .line 91
+    invoke-static {v2, v1, v0}, LX/0Fj;->A00(Ljava/lang/StringBuilder;Ljava/lang/String;Ljava/lang/Object;)V
+
+    .line 94
+    const-string v1, "statusReminderNotification"
+
+    .line 96
+    iget-object v0, p0, LX/BND;->A08:Ljava/lang/Boolean;
+
+    .line 98
+    invoke-static {v2, v1, v0}, LX/0Fj;->A00(Ljava/lang/StringBuilder;Ljava/lang/String;Ljava/lang/Object;)V
+
+    .line 101
+    const-string v1, "statusShowNotification"
+
+    .line 103
+    iget-object v0, p0, LX/BND;->A09:Ljava/lang/Boolean;
+
+    .line 105
+    invoke-static {v2, v1, v0}, LX/0Fj;->A00(Ljava/lang/StringBuilder;Ljava/lang/String;Ljava/lang/Object;)V
+
+    .line 108
+    iget-object v0, p0, LX/BND;->A0C:Ljava/lang/Integer;
+
+    .line 110
+    invoke-static {v0}, LX/1U7;->A0n(Ljava/lang/Number;)Ljava/lang/String;
+
+    .line 113
+    move-result-object v1
+
+    .line 114
+    const-string v0, "statusSoundTone"
+
+    .line 116
+    invoke-static {v2, v0, v1}, LX/0Fj;->A00(Ljava/lang/StringBuilder;Ljava/lang/String;Ljava/lang/Object;)V
+
+    .line 119
+    iget-object v0, p0, LX/BND;->A0D:Ljava/lang/Integer;
+
+    .line 121
+    invoke-static {v0}, LX/1U7;->A0n(Ljava/lang/Number;)Ljava/lang/String;
+
+    .line 124
+    move-result-object v1
+
+    .line 125
+    const-string v0, "unreadBadgeSetting"
+
+    .line 127
+    invoke-static {v1, v0, v2}, LX/1U7;->A0q(Ljava/lang/Object;Ljava/lang/String;Ljava/lang/StringBuilder;)Ljava/lang/String;
+
+    .line 130
+    move-result-object v0
+
+    .line 131
+    return-object v0
+.end method

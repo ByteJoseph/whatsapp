@@ -1,0 +1,682 @@
+.class public final LX/Srv;
+.super Ljava/lang/Object;
+.source ""
+
+# interfaces
+.implements LX/TQr;
+
+
+# static fields
+.field public static final A04:LX/ROX;
+
+.field public static final A05:Ljava/lang/ThreadLocal;
+
+
+# instance fields
+.field public final A00:I
+
+.field public final A01:LX/TPK;
+
+.field public final A02:Ljavax/crypto/spec/SecretKeySpec;
+
+.field public final A03:[B
+
+
+# direct methods
+.method public static constructor <clinit>()V
+    .registers 1
+
+    .line 0
+    sget-object v0, LX/ROX;->A00:LX/ROX;
+
+    .line 2
+    sput-object v0, LX/Srv;->A04:LX/ROX;
+
+    .line 4
+    new-instance v0, LX/TB7;
+
+    .line 6
+    invoke-direct {v0}, LX/TB7;-><init>()V
+
+    .line 9
+    sput-object v0, LX/Srv;->A05:Ljava/lang/ThreadLocal;
+
+    .line 11
+    return-void
+.end method
+
+.method public constructor <init>([BI[B)V
+    .registers 8
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x10,
+            0x0,
+            0x0
+        }
+        names = {
+            "key",
+            "ivSizeInBytes",
+            "outputPrefix"
+        }
+    .end annotation
+
+    .line 0
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    .line 3
+    sget-object v0, LX/Srv;->A04:LX/ROX;
+
+    .line 5
+    invoke-virtual {v0}, LX/ROX;->A00()Z
+
+    .line 8
+    move-result v0
+
+    .line 9
+    if-eqz v0, :cond_66
+
+    .line 11
+    const/16 v0, 0xc
+
+    .line 13
+    if-eq p2, v0, :cond_1a
+
+    .line 15
+    const/16 v0, 0x10
+
+    .line 17
+    if-eq p2, v0, :cond_1a
+
+    .line 19
+    const-string v0, "IV size should be either 12 or 16 bytes"
+
+    .line 21
+    invoke-static {v0}, LX/1U7;->A0c(Ljava/lang/String;)Ljava/lang/IllegalArgumentException;
+
+    .line 24
+    move-result-object v0
+
+    .line 25
+    throw v0
+
+    .line 26
+    :cond_1a
+    iput p2, p0, LX/Srv;->A00:I
+
+    .line 28
+    array-length v2, p1
+
+    .line 29
+    invoke-static {v2}, LX/SL6;->A01(I)V
+
+    .line 32
+    invoke-static {p1}, LX/N21;->A0z([B)Ljavax/crypto/spec/SecretKeySpec;
+
+    .line 35
+    move-result-object v0
+
+    .line 36
+    iput-object v0, p0, LX/Srv;->A02:Ljavax/crypto/spec/SecretKeySpec;
+
+    .line 38
+    invoke-static {v2}, LX/REE;->A00(I)LX/REE;
+
+    .line 41
+    move-result-object v1
+
+    .line 42
+    new-instance v0, LX/S7N;
+
+    .line 44
+    invoke-direct {v0, p1, v2}, LX/S7N;-><init>([BI)V
+
+    .line 47
+    new-instance v3, LX/SLF;
+
+    .line 49
+    invoke-direct {v3, v0}, LX/SLF;-><init>(LX/S7N;)V
+
+    .line 52
+    iget v2, v1, LX/REE;->A00:I
+
+    .line 54
+    iget-object v1, v3, LX/SLF;->A00:LX/S7N;
+
+    .line 56
+    iget-object v0, v1, LX/S7N;->A00:[B
+
+    .line 58
+    array-length v0, v0
+
+    .line 59
+    if-ne v2, v0, :cond_61
+
+    .line 61
+    sget-object v0, LX/SsP;->A03:LX/ROX;
+
+    .line 63
+    invoke-virtual {v1}, LX/S7N;->A00()[B
+
+    .line 66
+    move-result-object v0
+
+    .line 67
+    new-instance v1, LX/SsP;
+
+    .line 69
+    invoke-direct {v1, v0}, LX/SsP;-><init>([B)V
+
+    .line 72
+    :try_start_48
+    sget-object v0, LX/SsO;->A02:LX/ROX;
+
+    .line 74
+    invoke-static {}, LX/SBH;->A00()Ljava/security/Provider;
+
+    .line 77
+    move-result-object v0
+
+    .line 78
+    if-eqz v0, :cond_55
+
+    .line 80
+    invoke-static {v1, v3, v0}, LX/SLF;->A00(LX/TPK;LX/SLF;Ljava/security/Provider;)LX/SsN;
+
+    .line 83
+    move-result-object v1
+
+    .line 84
+    goto :goto_5c
+
+    .line 85
+    :cond_55
+    const-string v0, "Conscrypt not available"
+
+    .line 87
+    invoke-static {v0}, LX/Qaj;->A0g(Ljava/lang/String;)Ljava/security/GeneralSecurityException;
+
+    .line 90
+    move-result-object v0
+
+    .line 91
+    throw v0
+    :try_end_5c
+    .catch Ljava/security/GeneralSecurityException; {:try_start_48 .. :try_end_5c} :catch_5c
+
+    .line 92
+    :catch_5c
+    :goto_5c
+    iput-object v1, p0, LX/Srv;->A01:LX/TPK;
+
+    .line 94
+    iput-object p3, p0, LX/Srv;->A03:[B
+
+    .line 96
+    return-void
+
+    .line 97
+    :cond_61
+    invoke-static {}, LX/Qak;->A0t()Ljava/security/GeneralSecurityException;
+
+    .line 100
+    move-result-object v0
+
+    .line 101
+    throw v0
+
+    .line 102
+    :cond_66
+    const-string v0, "Can not use AES-EAX in FIPS-mode."
+
+    .line 104
+    invoke-static {v0}, LX/Qaj;->A0g(Ljava/lang/String;)Ljava/security/GeneralSecurityException;
+
+    .line 107
+    move-result-object v0
+
+    .line 108
+    throw v0
+.end method
+
+.method private A00([BIII)[B
+    .registers 8
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x0,
+            0x10,
+            0x0,
+            0x0
+        }
+        names = {
+            "tag",
+            "data",
+            "offset",
+            "length"
+        }
+    .end annotation
+
+    .line 0
+    add-int/lit8 v0, p4, 0x10
+
+    .line 2
+    new-array v2, v0, [B
+
+    .line 4
+    const/16 v1, 0xf
+
+    .line 6
+    int-to-byte v0, p2
+
+    .line 7
+    aput-byte v0, v2, v1
+
+    .line 9
+    const/16 v1, 0x10
+
+    .line 11
+    invoke-static {p1, p3, v2, v1, p4}, Ljava/lang/System;->arraycopy(Ljava/lang/Object;ILjava/lang/Object;II)V
+
+    .line 14
+    iget-object v0, p0, LX/Srv;->A01:LX/TPK;
+
+    .line 16
+    invoke-interface {v0, v2, v1}, LX/TPK;->ALD([BI)[B
+
+    .line 19
+    move-result-object v0
+
+    .line 20
+    return-object v0
+.end method
+
+
+# virtual methods
+.method public APg([B[B)[B
+    .registers 15
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x10,
+            0x10
+        }
+        names = {
+            "ciphertext",
+            "associatedData"
+        }
+    .end annotation
+
+    .line 0
+    array-length v9, p1
+
+    .line 1
+    iget-object v0, p0, LX/Srv;->A03:[B
+
+    .line 3
+    array-length v6, v0
+
+    .line 4
+    sub-int v5, v9, v6
+
+    .line 6
+    iget v1, p0, LX/Srv;->A00:I
+
+    .line 8
+    sub-int/2addr v5, v1
+
+    .line 9
+    const/16 v8, 0x10
+
+    .line 11
+    sub-int/2addr v5, v8
+
+    .line 12
+    if-ltz v5, :cond_61
+
+    .line 14
+    invoke-static {v0, p1}, LX/SO6;->A02([B[B)Z
+
+    .line 17
+    move-result v0
+
+    .line 18
+    if-eqz v0, :cond_5a
+
+    .line 20
+    const/4 v7, 0x0
+
+    .line 21
+    invoke-direct {p0, p1, v7, v6, v1}, LX/Srv;->A00([BIII)[B
+
+    .line 24
+    move-result-object v4
+
+    .line 25
+    if-nez p2, :cond_1d
+
+    .line 27
+    new-array p2, v7, [B
+
+    .line 29
+    :cond_1d
+    array-length v0, p2
+
+    .line 30
+    const/4 v3, 0x1
+
+    .line 31
+    invoke-direct {p0, p2, v3, v7, v0}, LX/Srv;->A00([BIII)[B
+
+    .line 34
+    move-result-object v11
+
+    .line 35
+    add-int/2addr v6, v1
+
+    .line 36
+    const/4 v0, 0x2
+
+    .line 37
+    invoke-direct {p0, p1, v0, v6, v5}, LX/Srv;->A00([BIII)[B
+
+    .line 40
+    move-result-object v10
+
+    .line 41
+    sub-int/2addr v9, v8
+
+    .line 42
+    const/4 v2, 0x0
+
+    .line 43
+    :cond_2b
+    add-int v0, v9, v7
+
+    .line 45
+    aget-byte v1, p1, v0
+
+    .line 47
+    aget-byte v0, v11, v7
+
+    .line 49
+    xor-int/2addr v1, v0
+
+    .line 50
+    aget-byte v0, v4, v7
+
+    .line 52
+    xor-int/2addr v1, v0
+
+    .line 53
+    aget-byte v0, v10, v7
+
+    .line 55
+    xor-int/2addr v1, v0
+
+    .line 56
+    or-int/2addr v2, v1
+
+    .line 57
+    int-to-byte v2, v2
+
+    .line 58
+    add-int/lit8 v7, v7, 0x1
+
+    .line 60
+    if-lt v7, v8, :cond_2b
+
+    .line 62
+    if-nez v2, :cond_52
+
+    .line 64
+    sget-object v0, LX/Srv;->A05:Ljava/lang/ThreadLocal;
+
+    .line 66
+    invoke-virtual {v0}, Ljava/lang/ThreadLocal;->get()Ljava/lang/Object;
+
+    .line 69
+    move-result-object v1
+
+    .line 70
+    check-cast v1, Ljavax/crypto/Cipher;
+
+    .line 72
+    iget-object v0, p0, LX/Srv;->A02:Ljavax/crypto/spec/SecretKeySpec;
+
+    .line 74
+    invoke-static {v0, v1, v4, v3}, LX/N22;->A1R(Ljava/security/Key;Ljavax/crypto/Cipher;[BI)V
+
+    .line 77
+    invoke-virtual {v1, p1, v6, v5}, Ljavax/crypto/Cipher;->doFinal([BII)[B
+
+    .line 80
+    move-result-object v0
+
+    .line 81
+    return-object v0
+
+    .line 82
+    :cond_52
+    const-string v1, "tag mismatch"
+
+    .line 84
+    new-instance v0, Ljavax/crypto/AEADBadTagException;
+
+    .line 86
+    invoke-direct {v0, v1}, Ljavax/crypto/AEADBadTagException;-><init>(Ljava/lang/String;)V
+
+    .line 89
+    throw v0
+
+    .line 90
+    :cond_5a
+    const-string v0, "Decryption failed (OutputPrefix mismatch)."
+
+    .line 92
+    invoke-static {v0}, LX/Qaj;->A0g(Ljava/lang/String;)Ljava/security/GeneralSecurityException;
+
+    .line 95
+    move-result-object v0
+
+    .line 96
+    throw v0
+
+    .line 97
+    :cond_61
+    const-string v0, "ciphertext too short"
+
+    .line 99
+    invoke-static {v0}, LX/Qaj;->A0g(Ljava/lang/String;)Ljava/security/GeneralSecurityException;
+
+    .line 102
+    move-result-object v0
+
+    .line 103
+    throw v0
+.end method
+
+.method public ATn([B[B)[B
+    .registers 17
+    .annotation system Ldalvik/annotation/MethodParameters;
+        accessFlags = {
+            0x10,
+            0x10
+        }
+        names = {
+            "plaintext",
+            "associatedData"
+        }
+    .end annotation
+
+    .line 0
+    move-object v9, p1
+
+    .line 1
+    move-object/from16 v3, p2
+
+    .line 3
+    array-length v11, p1
+
+    .line 4
+    iget-object v2, p0, LX/Srv;->A03:[B
+
+    .line 6
+    array-length v6, v2
+
+    .line 7
+    const v0, 0x7fffffff
+
+    .line 10
+    sub-int/2addr v0, v6
+
+    .line 11
+    iget v1, p0, LX/Srv;->A00:I
+
+    .line 13
+    sub-int/2addr v0, v1
+
+    .line 14
+    const/16 v5, 0x10
+
+    .line 16
+    sub-int/2addr v0, v5
+
+    .line 17
+    if-gt v11, v0, :cond_5d
+
+    .line 19
+    add-int v13, v6, v1
+
+    .line 21
+    add-int v0, v13, v11
+
+    .line 23
+    add-int/lit8 v0, v0, 0x10
+
+    .line 25
+    invoke-static {v2, v0}, Ljava/util/Arrays;->copyOf([BI)[B
+
+    .line 28
+    move-result-object v12
+
+    .line 29
+    invoke-static {v1}, LX/Owl;->A00(I)[B
+
+    .line 32
+    move-result-object v2
+
+    .line 33
+    const/4 v10, 0x0
+
+    .line 34
+    invoke-static {v2, v10, v12, v6, v1}, Ljava/lang/System;->arraycopy(Ljava/lang/Object;ILjava/lang/Object;II)V
+
+    .line 37
+    array-length v0, v2
+
+    .line 38
+    invoke-direct {p0, v2, v10, v10, v0}, LX/Srv;->A00([BIII)[B
+
+    .line 41
+    move-result-object v4
+
+    .line 42
+    if-nez p2, :cond_2e
+
+    .line 44
+    new-array v3, v10, [B
+
+    .line 46
+    :cond_2e
+    array-length v0, v3
+
+    .line 47
+    const/4 v2, 0x1
+
+    .line 48
+    invoke-direct {p0, v3, v2, v10, v0}, LX/Srv;->A00([BIII)[B
+
+    .line 51
+    move-result-object v7
+
+    .line 52
+    sget-object v0, LX/Srv;->A05:Ljava/lang/ThreadLocal;
+
+    .line 54
+    invoke-virtual {v0}, Ljava/lang/ThreadLocal;->get()Ljava/lang/Object;
+
+    .line 57
+    move-result-object v8
+
+    .line 58
+    check-cast v8, Ljavax/crypto/Cipher;
+
+    .line 60
+    iget-object v0, p0, LX/Srv;->A02:Ljavax/crypto/spec/SecretKeySpec;
+
+    .line 62
+    invoke-static {v0, v8, v4, v2}, LX/N22;->A1R(Ljava/security/Key;Ljavax/crypto/Cipher;[BI)V
+
+    .line 65
+    invoke-virtual/range {v8 .. v13}, Ljavax/crypto/Cipher;->doFinal([BII[BI)I
+
+    .line 68
+    const/4 v0, 0x2
+
+    .line 69
+    invoke-direct {p0, v12, v0, v13, v11}, LX/Srv;->A00([BIII)[B
+
+    .line 72
+    move-result-object v3
+
+    .line 73
+    add-int/2addr v6, v11
+
+    .line 74
+    add-int/2addr v6, v1
+
+    .line 75
+    :cond_4b
+    add-int v2, v6, v10
+
+    .line 77
+    aget-byte v1, v7, v10
+
+    .line 79
+    aget-byte v0, v4, v10
+
+    .line 81
+    xor-int/2addr v1, v0
+
+    .line 82
+    aget-byte v0, v3, v10
+
+    .line 84
+    xor-int/2addr v1, v0
+
+    .line 85
+    int-to-byte v0, v1
+
+    .line 86
+    aput-byte v0, v12, v2
+
+    .line 88
+    add-int/lit8 v10, v10, 0x1
+
+    .line 90
+    if-lt v10, v5, :cond_4b
+
+    .line 92
+    return-object v12
+
+    .line 93
+    :cond_5d
+    const-string v0, "plaintext too long"
+
+    .line 95
+    invoke-static {v0}, LX/Qaj;->A0g(Ljava/lang/String;)Ljava/security/GeneralSecurityException;
+
+    .line 98
+    move-result-object v0
+
+    .line 99
+    throw v0
+.end method

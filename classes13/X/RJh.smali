@@ -1,0 +1,24 @@
+.class public final LX/RJh;
+.super LX/RUE;
+.source ""
+
+
+# direct methods
+.method public constructor <init>(LX/RXi;)V
+    .registers 3
+
+    .line 0
+    const-string v0, "null returned for JID scalar: "
+
+    .line 2
+    invoke-static {v0, p1}, LX/1U7;->A0r(Ljava/lang/String;Ljava/lang/Object;)Ljava/lang/String;
+
+    .line 5
+    move-result-object v0
+
+    .line 6
+    invoke-direct {p0, v0}, LX/RUE;-><init>(Ljava/lang/String;)V
+
+    .line 9
+    return-void
+.end method

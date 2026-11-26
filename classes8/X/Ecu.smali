@@ -1,0 +1,118 @@
+.class public final LX/Ecu;
+.super Ljava/lang/Object;
+.source ""
+
+# interfaces
+.implements LX/FLn;
+
+
+# static fields
+.field public static final A00:LX/Ecu;
+
+
+# direct methods
+.method public static constructor <clinit>()V
+    .registers 1
+
+    .line 0
+    new-instance v0, LX/Ecu;
+
+    .line 2
+    invoke-direct {v0}, Ljava/lang/Object;-><init>()V
+
+    .line 5
+    sput-object v0, LX/Ecu;->A00:LX/Ecu;
+
+    .line 7
+    return-void
+.end method
+
+.method public constructor <init>()V
+    .registers 1
+
+    .line 0
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    .line 3
+    return-void
+.end method
+
+
+# virtual methods
+.method public AOp(Landroid/app/Activity;)Landroid/graphics/Rect;
+    .registers 7
+
+    .line 0
+    invoke-static {}, LX/5UK;->A0P()Landroid/graphics/Rect;
+
+    .line 3
+    move-result-object v4
+
+    .line 4
+    invoke-static {p1}, LX/CyS;->A0M(Landroid/app/Activity;)Landroid/view/Display;
+
+    .line 7
+    move-result-object v1
+
+    .line 8
+    invoke-virtual {v1, v4}, Landroid/view/Display;->getRectSize(Landroid/graphics/Rect;)V
+
+    .line 11
+    invoke-virtual {p1}, Landroid/app/Activity;->isInMultiWindowMode()Z
+
+    .line 14
+    move-result v0
+
+    .line 15
+    if-nez v0, :cond_22
+
+    .line 17
+    invoke-static {v1}, LX/CyR;->A0D(Landroid/view/Display;)Landroid/graphics/Point;
+
+    .line 20
+    move-result-object v3
+
+    .line 21
+    invoke-static {p1}, LX/CyV;->A03(Landroid/view/ContextThemeWrapper;)I
+
+    .line 24
+    move-result v2
+
+    .line 25
+    iget v1, v4, Landroid/graphics/Rect;->bottom:I
+
+    .line 27
+    add-int/2addr v1, v2
+
+    .line 28
+    iget v0, v3, Landroid/graphics/Point;->y:I
+
+    .line 30
+    if-ne v1, v0, :cond_23
+
+    .line 32
+    iput v1, v4, Landroid/graphics/Rect;->bottom:I
+
+    .line 34
+    :cond_22
+    return-object v4
+
+    .line 35
+    :cond_23
+    iget v1, v4, Landroid/graphics/Rect;->right:I
+
+    .line 37
+    add-int/2addr v1, v2
+
+    .line 38
+    iget v0, v3, Landroid/graphics/Point;->x:I
+
+    .line 40
+    if-ne v1, v0, :cond_22
+
+    .line 42
+    iput v1, v4, Landroid/graphics/Rect;->right:I
+
+    .line 44
+    return-object v4
+.end method

@@ -1,0 +1,25 @@
+.class public final Landroidx/credentials/playservices/controllers/identitycredentials/getcredential/GetCredentialController$Companion;
+.super Ljava/lang/Object;
+.source ""
+
+
+# direct methods
+.method public constructor <init>()V
+    .registers 1
+
+    .line 268435456
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    .line 268435459
+    return-void
+.end method
+
+.method public synthetic constructor <init>(LX/2mC;)V
+    .registers 2
+
+    .line 0
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    .line 3
+    return-void
+.end method

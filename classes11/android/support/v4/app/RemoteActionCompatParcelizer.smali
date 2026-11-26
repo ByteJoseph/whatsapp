@@ -1,0 +1,38 @@
+.class public final Landroid/support/v4/app/RemoteActionCompatParcelizer;
+.super Landroidx/core/app/RemoteActionCompatParcelizer;
+.source ""
+
+
+# direct methods
+.method public constructor <init>()V
+    .registers 1
+
+    .line 0
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    .line 3
+    return-void
+.end method
+
+.method public static read(LX/MGW;)Landroidx/core/app/RemoteActionCompat;
+    .registers 1
+
+    .line 0
+    invoke-static {p0}, Landroidx/core/app/RemoteActionCompatParcelizer;->read(LX/MGW;)Landroidx/core/app/RemoteActionCompat;
+
+    .line 3
+    move-result-object p0
+
+    .line 4
+    return-object p0
+.end method
+
+.method public static write(Landroidx/core/app/RemoteActionCompat;LX/MGW;)V
+    .registers 2
+
+    .line 0
+    invoke-static {p0, p1}, Landroidx/core/app/RemoteActionCompatParcelizer;->write(Landroidx/core/app/RemoteActionCompat;LX/MGW;)V
+
+    .line 3
+    return-void
+.end method

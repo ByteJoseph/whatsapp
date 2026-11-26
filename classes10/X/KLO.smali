@@ -1,0 +1,432 @@
+.class public final synthetic LX/KLO;
+.super Ljava/lang/Object;
+.source ""
+
+# interfaces
+.implements LX/0uY;
+
+
+# annotations
+.annotation runtime Lkotlin/Deprecated;
+    level = .enum LX/Iyf;->HIDDEN:LX/Iyf;
+    message = "This synthesized declaration should not be used directly"
+.end annotation
+
+
+# static fields
+.field public static final A00:LX/KLO;
+
+.field public static final A01:LX/0ub;
+
+
+# direct methods
+.method public static constructor <clinit>()V
+    .registers 3
+
+    .line 0
+    new-instance v2, LX/KLO;
+
+    .line 2
+    invoke-direct {v2}, Ljava/lang/Object;-><init>()V
+
+    .line 5
+    sput-object v2, LX/KLO;->A00:LX/KLO;
+
+    .line 7
+    const/4 v1, 0x5
+
+    .line 8
+    const-string v0, "com.whatsapp.catalog.biz.network.graphql.request.GetProductListGraphqlRequest.ProductListRequestParams"
+
+    .line 10
+    invoke-static {v0, v2, v1}, LX/5UK;->A16(Ljava/lang/String;LX/0uY;I)LX/0ud;
+
+    .line 13
+    move-result-object v2
+
+    .line 14
+    const-string v0, "jid"
+
+    .line 16
+    const/4 v1, 0x0
+
+    .line 17
+    invoke-virtual {v2, v0, v1}, LX/0ud;->A00(Ljava/lang/String;Z)V
+
+    .line 20
+    const-string v0, "products"
+
+    .line 22
+    invoke-virtual {v2, v0, v1}, LX/0ud;->A00(Ljava/lang/String;Z)V
+
+    .line 25
+    const-string v0, "width"
+
+    .line 27
+    invoke-virtual {v2, v0, v1}, LX/0ud;->A00(Ljava/lang/String;Z)V
+
+    .line 30
+    const-string v0, "height"
+
+    .line 32
+    invoke-virtual {v2, v0, v1}, LX/0ud;->A00(Ljava/lang/String;Z)V
+
+    .line 35
+    const-string v1, "catalog_session_id"
+
+    .line 37
+    const/4 v0, 0x1
+
+    .line 38
+    invoke-virtual {v2, v1, v0}, LX/0ud;->A00(Ljava/lang/String;Z)V
+
+    .line 41
+    sput-object v2, LX/KLO;->A01:LX/0ub;
+
+    .line 43
+    return-void
+.end method
+
+.method public constructor <init>()V
+    .registers 1
+
+    .line 0
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    .line 3
+    return-void
+.end method
+
+
+# virtual methods
+.method public final AK1()[LX/0uX;
+    .registers 5
+
+    .line 0
+    sget-object v3, LX/Jj3;->A05:[LX/00q;
+
+    .line 2
+    const/4 v0, 0x5
+
+    .line 3
+    new-array v2, v0, [LX/0uX;
+
+    .line 5
+    invoke-static {v2}, LX/I74;->A1D([Ljava/lang/Object;)LX/0vH;
+
+    .line 8
+    move-result-object v1
+
+    .line 9
+    const/4 v0, 0x1
+
+    .line 10
+    invoke-static {v2, v3, v0}, LX/5UM;->A1U([Ljava/lang/Object;[LX/00q;I)V
+
+    .line 13
+    const/4 v0, 0x2
+
+    .line 14
+    aput-object v1, v2, v0
+
+    .line 16
+    const/4 v0, 0x3
+
+    .line 17
+    aput-object v1, v2, v0
+
+    .line 19
+    invoke-static {v1, v2}, LX/FP2;->A1N(LX/0uX;[Ljava/lang/Object;)V
+
+    .line 22
+    return-object v2
+.end method
+
+.method public bridge synthetic AQQ(LX/0un;)Ljava/lang/Object;
+    .registers 18
+
+    .line 0
+    const/4 v9, 0x0
+
+    .line 1
+    move-object/from16 v0, p1
+
+    .line 3
+    invoke-static {v0, v9}, LX/00m;->A09(Ljava/lang/Object;I)V
+
+    .line 6
+    sget-object v8, LX/KLO;->A01:LX/0ub;
+
+    .line 8
+    invoke-interface {v0, v8}, LX/0un;->AGV(LX/0ub;)LX/0um;
+
+    .line 11
+    move-result-object v7
+
+    .line 12
+    sget-object v6, LX/Jj3;->A05:[LX/00q;
+
+    .line 14
+    const/4 v5, 0x3
+
+    .line 15
+    const/4 v4, 0x4
+
+    .line 16
+    const/4 v3, 0x2
+
+    .line 17
+    const/4 v2, 0x1
+
+    .line 18
+    const/4 v11, 0x0
+
+    .line 19
+    move-object v10, v11
+
+    .line 20
+    move-object v12, v11
+
+    .line 21
+    move-object v13, v11
+
+    .line 22
+    move-object v14, v11
+
+    .line 23
+    const/4 v15, 0x0
+
+    .line 24
+    :goto_18
+    invoke-interface {v7, v8}, LX/0um;->APH(LX/0ub;)I
+
+    .line 27
+    move-result v1
+
+    .line 28
+    const/4 v0, -0x1
+
+    .line 29
+    if-eq v1, v0, :cond_51
+
+    .line 31
+    if-eqz v1, :cond_45
+
+    .line 33
+    if-eq v1, v2, :cond_3e
+
+    .line 35
+    if-eq v1, v3, :cond_37
+
+    .line 37
+    if-eq v1, v5, :cond_30
+
+    .line 39
+    if-ne v1, v4, :cond_4c
+
+    .line 41
+    invoke-static {v14, v8, v7, v4}, LX/5UM;->A0t(Ljava/lang/Object;LX/0ub;LX/0um;I)Ljava/lang/String;
+
+    .line 44
+    move-result-object v14
+
+    .line 45
+    or-int/lit8 v15, v15, 0x10
+
+    .line 47
+    goto :goto_18
+
+    .line 48
+    :cond_30
+    invoke-interface {v7, v8, v5}, LX/0um;->APd(LX/0ub;I)Ljava/lang/String;
+
+    .line 51
+    move-result-object v13
+
+    .line 52
+    or-int/lit8 v15, v15, 0x8
+
+    .line 54
+    goto :goto_18
+
+    .line 55
+    :cond_37
+    invoke-interface {v7, v8, v3}, LX/0um;->APd(LX/0ub;I)Ljava/lang/String;
+
+    .line 58
+    move-result-object v12
+
+    .line 59
+    or-int/lit8 v15, v15, 0x4
+
+    .line 61
+    goto :goto_18
+
+    .line 62
+    :cond_3e
+    invoke-static {v10, v8, v7, v6, v2}, LX/5UP;->A0q(Ljava/lang/Object;LX/0ub;LX/0um;[LX/00q;I)Ljava/util/List;
+
+    .line 65
+    move-result-object v10
+
+    .line 66
+    or-int/lit8 v15, v15, 0x2
+
+    .line 68
+    goto :goto_18
+
+    .line 69
+    :cond_45
+    invoke-interface {v7, v8, v9}, LX/0um;->APd(LX/0ub;I)Ljava/lang/String;
+
+    .line 72
+    move-result-object v11
+
+    .line 73
+    or-int/lit8 v15, v15, 0x1
+
+    .line 75
+    goto :goto_18
+
+    .line 76
+    :cond_4c
+    invoke-static {v1}, LX/5UK;->A15(I)LX/KdC;
+
+    .line 79
+    move-result-object v0
+
+    .line 80
+    throw v0
+
+    .line 81
+    :cond_51
+    invoke-interface {v7, v8}, LX/0um;->AU2(LX/0ub;)V
+
+    .line 84
+    new-instance v9, LX/Jj3;
+
+    .line 86
+    invoke-direct/range {v9 .. v15}, LX/Jj3;-><init>(Ljava/util/List;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;I)V
+
+    .line 89
+    return-object v9
+.end method
+
+.method public final Am3()LX/0ub;
+    .registers 2
+
+    .line 0
+    sget-object v0, LX/KLO;->A01:LX/0ub;
+
+    .line 2
+    return-object v0
+.end method
+
+.method public bridge synthetic CwY(Ljava/lang/Object;LX/KmH;)V
+    .registers 9
+
+    .line 0
+    check-cast p1, LX/Jj3;
+
+    .line 2
+    const/4 v5, 0x0
+
+    .line 3
+    invoke-static {p2, v5, p1}, LX/2Ae;->A1Z(Ljava/lang/Object;ILjava/lang/Object;)Z
+
+    .line 6
+    move-result v2
+
+    .line 7
+    sget-object v3, LX/KLO;->A01:LX/0ub;
+
+    .line 9
+    invoke-interface {p2, v3}, LX/KmH;->AGW(LX/0ub;)LX/KmG;
+
+    .line 12
+    move-result-object v4
+
+    .line 13
+    sget-object v1, LX/Jj3;->A05:[LX/00q;
+
+    .line 15
+    iget-object v0, p1, LX/Jj3;->A02:Ljava/lang/String;
+
+    .line 17
+    invoke-interface {v4, v0, v3, v5}, LX/KmG;->ATj(Ljava/lang/String;LX/0ub;I)V
+
+    .line 20
+    invoke-static {v1, v2}, LX/5UN;->A0n([LX/00q;I)LX/0uV;
+
+    .line 23
+    move-result-object v1
+
+    .line 24
+    iget-object v0, p1, LX/Jj3;->A04:Ljava/util/List;
+
+    .line 26
+    invoke-interface {v4, v0, v1, v3, v2}, LX/KmG;->ATe(Ljava/lang/Object;LX/0uV;LX/0ub;I)V
+
+    .line 29
+    const/4 v1, 0x2
+
+    .line 30
+    iget-object v0, p1, LX/Jj3;->A03:Ljava/lang/String;
+
+    .line 32
+    invoke-interface {v4, v0, v3, v1}, LX/KmG;->ATj(Ljava/lang/String;LX/0ub;I)V
+
+    .line 35
+    const/4 v1, 0x3
+
+    .line 36
+    iget-object v0, p1, LX/Jj3;->A01:Ljava/lang/String;
+
+    .line 38
+    invoke-interface {v4, v0, v3, v1}, LX/KmG;->ATj(Ljava/lang/String;LX/0ub;I)V
+
+    .line 41
+    const/4 v2, 0x4
+
+    .line 42
+    invoke-interface {v4}, LX/KmG;->D57()Z
+
+    .line 45
+    move-result v0
+
+    .line 46
+    if-nez v0, :cond_34
+
+    .line 48
+    iget-object v0, p1, LX/Jj3;->A00:Ljava/lang/String;
+
+    .line 50
+    if-eqz v0, :cond_3b
+
+    .line 52
+    :cond_34
+    sget-object v1, LX/0vH;->A01:LX/0vH;
+
+    .line 54
+    iget-object v0, p1, LX/Jj3;->A00:Ljava/lang/String;
+
+    .line 56
+    invoke-interface {v4, v0, v1, v3, v2}, LX/KmG;->ATc(Ljava/lang/Object;LX/0uV;LX/0ub;I)V
+
+    .line 59
+    :cond_3b
+    invoke-interface {v4, v3}, LX/KmG;->AU2(LX/0ub;)V
+
+    .line 62
+    return-void
+.end method
+
+.method public synthetic DEG()[LX/0uX;
+    .registers 2
+
+    .line 0
+    sget-object v0, LX/6sK;->A00:[LX/0uX;
+
+    .line 2
+    return-object v0
+.end method

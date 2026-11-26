@@ -1,0 +1,22 @@
+.class public final LX/GVH;
+.super Ljava/lang/Object;
+.source ""
+
+
+# instance fields
+.field public final synthetic A00:Lcom/whatsapp/newsletter/status/job/GetStatusMyAddOnsJob;
+
+
+# direct methods
+.method public constructor <init>(Lcom/whatsapp/newsletter/status/job/GetStatusMyAddOnsJob;)V
+    .registers 2
+
+    .line 0
+    iput-object p1, p0, LX/GVH;->A00:Lcom/whatsapp/newsletter/status/job/GetStatusMyAddOnsJob;
+
+    .line 2
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    .line 5
+    return-void
+.end method

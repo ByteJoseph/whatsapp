@@ -1,0 +1,173 @@
+.class public final LX/8A5;
+.super Ljava/lang/Object;
+.source ""
+
+# interfaces
+.implements LX/8ZF;
+
+
+# direct methods
+.method public constructor <init>()V
+    .registers 1
+
+    .line 0
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    .line 3
+    return-void
+.end method
+
+
+# virtual methods
+.method public AXE(LX/7Tr;)LX/7Wf;
+    .registers 6
+
+    .line 0
+    invoke-static {p1}, LX/7Tr;->A00(LX/7Tr;)LX/6MI;
+
+    .line 3
+    move-result-object v1
+
+    .line 4
+    instance-of v0, v1, LX/8Se;
+
+    .line 6
+    const/4 v3, 0x0
+
+    .line 7
+    if-eqz v0, :cond_43
+
+    .line 9
+    check-cast v1, LX/8Se;
+
+    .line 11
+    if-eqz v1, :cond_43
+
+    .line 13
+    iget-object v2, v1, LX/8Se;->A00:LX/5ls;
+
+    .line 15
+    invoke-static {v2}, LX/3dE;->A08(LX/0ph;)I
+
+    .line 18
+    move-result v1
+
+    .line 19
+    const v0, -0x3e726d1a
+
+    .line 22
+    if-ne v1, v0, :cond_43
+
+    .line 24
+    iget-object v0, v2, LX/0ph;->A00:Lorg/json/JSONObject;
+
+    .line 26
+    new-instance v1, LX/5gm;
+
+    .line 28
+    invoke-direct {v1, v0}, LX/5gm;-><init>(Lorg/json/JSONObject;)V
+
+    .line 31
+    const-string/jumbo v0, "trusted_sources"
+
+    .line 34
+    invoke-virtual {v1, v0}, LX/0ph;->A06(Ljava/lang/String;)Lcom/google/common/collect/ImmutableList;
+
+    .line 37
+    move-result-object v0
+
+    .line 38
+    if-eqz v0, :cond_40
+
+    .line 40
+    invoke-static {v0}, LX/07a;->A1M(Ljava/lang/Iterable;)Ljava/util/List;
+
+    .line 43
+    move-result-object v3
+
+    .line 44
+    :goto_2c
+    const-string v0, "payload"
+
+    .line 46
+    invoke-virtual {v1, v0}, LX/0ph;->A0E(Ljava/lang/String;)Ljava/lang/String;
+
+    .line 49
+    move-result-object v2
+
+    .line 50
+    invoke-static {v1}, LX/5UL;->A0z(LX/0ph;)Ljava/lang/String;
+
+    .line 53
+    move-result-object v1
+
+    .line 54
+    new-instance v0, LX/8Ae;
+
+    .line 56
+    invoke-direct {v0, v2, v1, v3}, LX/8Ae;-><init>(Ljava/lang/String;Ljava/lang/String;Ljava/util/List;)V
+
+    .line 59
+    invoke-static {v0}, LX/7Wf;->A03(LX/8Zm;)LX/7Wf;
+
+    .line 62
+    move-result-object v0
+
+    .line 63
+    return-object v0
+
+    .line 64
+    :cond_40
+    sget-object v3, LX/01l;->A00:LX/01l;
+
+    .line 66
+    goto :goto_2c
+
+    .line 67
+    :cond_43
+    return-object v3
+.end method
+
+.method public Afp(LX/8Zm;)Ljava/lang/Integer;
+    .registers 3
+
+    .line 0
+    const/4 v0, 0x0
+
+    .line 1
+    invoke-static {p1, v0}, LX/00m;->A09(Ljava/lang/Object;I)V
+
+    .line 4
+    instance-of v0, p1, LX/8Ae;
+
+    .line 6
+    invoke-static {v0}, LX/5UO;->A0g(I)Ljava/lang/Integer;
+
+    .line 9
+    move-result-object v0
+
+    .line 10
+    return-object v0
+.end method
+
+.method public DDr(LX/7DA;)LX/6MH;
+    .registers 3
+
+    .line 0
+    invoke-static {p1}, LX/7Wf;->A02(LX/7DA;)LX/8Zm;
+
+    .line 3
+    move-result-object v0
+
+    .line 4
+    instance-of v0, v0, LX/8Ae;
+
+    .line 6
+    invoke-static {p1, v0}, LX/5UP;->A0s(LX/7DA;I)LX/6MH;
+
+    .line 9
+    move-result-object v0
+
+    .line 10
+    return-object v0
+.end method

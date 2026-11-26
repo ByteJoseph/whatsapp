@@ -1,0 +1,71 @@
+.class public final LX/5aK;
+.super Landroid/widget/FrameLayout;
+.source ""
+
+
+# instance fields
+.field public A00:Lcom/whatsapp/gallery/ui/GalleryTabHostFragment;
+
+.field public final A01:I
+
+
+# direct methods
+.method public constructor <init>(Landroid/content/Context;)V
+    .registers 4
+
+    .line 0
+    const/4 v1, 0x0
+
+    .line 1
+    const/4 v0, 0x0
+
+    .line 2
+    invoke-direct {p0, p1, v1, v0, v0}, Landroid/widget/FrameLayout;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;II)V
+
+    .line 5
+    invoke-static {}, Landroid/view/View;->generateViewId()I
+
+    .line 8
+    move-result v0
+
+    .line 9
+    iput v0, p0, LX/5aK;->A01:I
+
+    .line 11
+    invoke-virtual {p0, v0}, Landroid/view/View;->setId(I)V
+
+    .line 14
+    return-void
+.end method
+
+
+# virtual methods
+.method public final getContainerId()I
+    .registers 2
+
+    .line 0
+    iget v0, p0, LX/5aK;->A01:I
+
+    .line 2
+    return v0
+.end method
+
+.method public final getMediaPickerFragment$libraries_foa_bindings_bindings()Lcom/whatsapp/gallery/ui/GalleryTabHostFragment;
+    .registers 2
+
+    .line 0
+    iget-object v0, p0, LX/5aK;->A00:Lcom/whatsapp/gallery/ui/GalleryTabHostFragment;
+
+    .line 2
+    return-object v0
+.end method
+
+.method public final setMediaPickerFragment$libraries_foa_bindings_bindings(Lcom/whatsapp/gallery/ui/GalleryTabHostFragment;)V
+    .registers 2
+
+    .line 0
+    iput-object p1, p0, LX/5aK;->A00:Lcom/whatsapp/gallery/ui/GalleryTabHostFragment;
+
+    .line 2
+    return-void
+.end method

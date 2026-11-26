@@ -1,0 +1,64 @@
+.class public final LX/9dH;
+.super Ljava/lang/Object;
+.source ""
+
+
+# instance fields
+.field public final A00:LX/05b;
+
+
+# direct methods
+.method public constructor <init>()V
+    .registers 2
+
+    .line 0
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    .line 3
+    invoke-static {}, LX/2Ad;->A0D()LX/05b;
+
+    .line 6
+    move-result-object v0
+
+    .line 7
+    iput-object v0, p0, LX/9dH;->A00:LX/05b;
+
+    .line 9
+    return-void
+.end method
+
+
+# virtual methods
+.method public final A00(Ljava/lang/String;)V
+    .registers 4
+
+    .line 0
+    const/4 v0, 0x1
+
+    .line 1
+    new-instance v1, LX/8wo;
+
+    .line 3
+    invoke-direct {v1}, LX/8wo;-><init>()V
+
+    .line 6
+    invoke-static {v0}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    .line 9
+    move-result-object v0
+
+    .line 10
+    iput-object v0, v1, LX/8wo;->A00:Ljava/lang/Integer;
+
+    .line 12
+    iput-object p1, v1, LX/8wo;->A01:Ljava/lang/String;
+
+    .line 14
+    iget-object v0, p0, LX/9dH;->A00:LX/05b;
+
+    .line 16
+    invoke-static {v0, v1}, LX/2Aj;->A13(LX/05b;LX/0Fh;)V
+
+    .line 19
+    return-void
+.end method

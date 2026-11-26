@@ -1,0 +1,19 @@
+.class public final LX/8nZ;
+.super LX/1lO;
+.source ""
+
+# interfaces
+.implements LX/1lQ;
+.implements LX/1lP;
+
+
+# virtual methods
+.method public BsH()V
+    .registers 1
+
+    .line 0
+    invoke-static {p0}, LX/8cb;->A0W(LX/1lO;)V
+
+    .line 3
+    return-void
+.end method

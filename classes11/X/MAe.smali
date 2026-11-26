@@ -1,0 +1,25 @@
+.class public abstract LX/MAe;
+.super Ljava/lang/Object;
+.source ""
+
+
+# direct methods
+.method public static A00(Landroid/view/View;I)V
+    .registers 2
+
+    .line 0
+    invoke-virtual {p0, p1}, Landroid/view/View;->setTextAlignment(I)V
+
+    .line 3
+    return-void
+.end method
+
+.method public static A01(Landroid/view/View;I)V
+    .registers 2
+
+    .line 0
+    invoke-virtual {p0, p1}, Landroid/view/View;->setTextDirection(I)V
+
+    .line 3
+    return-void
+.end method

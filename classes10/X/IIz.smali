@@ -1,0 +1,34 @@
+.class public final LX/IIz;
+.super LX/0MY;
+.source ""
+
+
+# instance fields
+.field public A00:LX/Je4;
+
+.field public A01:Z
+
+.field public A02:Z
+
+.field public final A03:LX/1YK;
+
+
+# direct methods
+.method public constructor <init>()V
+    .registers 2
+
+    .line 0
+    invoke-direct {p0}, LX/0MY;-><init>()V
+
+    .line 3
+    invoke-static {}, LX/2Ac;->A0Y()LX/1YK;
+
+    .line 6
+    move-result-object v0
+
+    .line 7
+    iput-object v0, p0, LX/IIz;->A03:LX/1YK;
+
+    .line 9
+    return-void
+.end method

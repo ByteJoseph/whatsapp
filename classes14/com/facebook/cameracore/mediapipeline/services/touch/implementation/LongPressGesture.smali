@@ -1,0 +1,15 @@
+.class public Lcom/facebook/cameracore/mediapipeline/services/touch/implementation/LongPressGesture;
+.super Lcom/facebook/cameracore/mediapipeline/services/touch/interfaces/Gesture;
+.source ""
+
+
+# virtual methods
+.method public getGestureType()Lcom/facebook/cameracore/mediapipeline/services/touch/interfaces/Gesture$GestureType;
+    .registers 2
+
+    .line 0
+    sget-object v0, Lcom/facebook/cameracore/mediapipeline/services/touch/interfaces/Gesture$GestureType;->LONG_PRESS:Lcom/facebook/cameracore/mediapipeline/services/touch/interfaces/Gesture$GestureType;
+
+    .line 2
+    return-object v0
+.end method

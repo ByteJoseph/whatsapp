@@ -1,0 +1,123 @@
+.class public final Lcom/facebook/common/dextricks/Prio;
+.super Ljava/lang/Object;
+.source ""
+
+
+# instance fields
+.field public final cpuPriority:I
+
+.field public final ioPriority:I
+
+
+# direct methods
+.method public constructor <init>(II)V
+    .registers 3
+
+    .line 0
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    .line 3
+    iput p1, p0, Lcom/facebook/common/dextricks/Prio;->ioPriority:I
+
+    .line 5
+    iput p2, p0, Lcom/facebook/common/dextricks/Prio;->cpuPriority:I
+
+    .line 7
+    return-void
+.end method
+
+.method public static lowest()Lcom/facebook/common/dextricks/Prio;
+    .registers 3
+
+    .line 0
+    const/16 v2, 0x6000
+
+    .line 2
+    const/16 v1, 0x13
+
+    .line 4
+    new-instance v0, Lcom/facebook/common/dextricks/Prio;
+
+    .line 6
+    invoke-direct {v0, v2, v1}, Lcom/facebook/common/dextricks/Prio;-><init>(II)V
+
+    .line 9
+    return-object v0
+.end method
+
+.method public static unchanged()Lcom/facebook/common/dextricks/Prio;
+    .registers 2
+
+    .line 0
+    const/high16 v1, -0x80000000
+
+    .line 2
+    new-instance v0, Lcom/facebook/common/dextricks/Prio;
+
+    .line 4
+    invoke-direct {v0, v1, v1}, Lcom/facebook/common/dextricks/Prio;-><init>(II)V
+
+    .line 7
+    return-object v0
+.end method
+
+
+# virtual methods
+.method public ioOnly()Lcom/facebook/common/dextricks/Prio;
+    .registers 4
+
+    .line 0
+    iget v2, p0, Lcom/facebook/common/dextricks/Prio;->ioPriority:I
+
+    .line 2
+    const/high16 v1, -0x80000000
+
+    .line 4
+    new-instance v0, Lcom/facebook/common/dextricks/Prio;
+
+    .line 6
+    invoke-direct {v0, v2, v1}, Lcom/facebook/common/dextricks/Prio;-><init>(II)V
+
+    .line 9
+    return-object v0
+.end method
+
+.method public isDefault()Z
+    .registers 3
+
+    .line 0
+    iget v0, p0, Lcom/facebook/common/dextricks/Prio;->ioPriority:I
+
+    .line 2
+    if-gez v0, :cond_9
+
+    .line 4
+    iget v1, p0, Lcom/facebook/common/dextricks/Prio;->cpuPriority:I
+
+    .line 6
+    const/4 v0, 0x1
+
+    .line 7
+    if-ltz v1, :cond_a
+
+    .line 9
+    :cond_9
+    const/4 v0, 0x0
+
+    .line 10
+    :cond_a
+    return v0
+.end method
+
+.method public with()Lcom/facebook/common/dextricks/Prio$With;
+    .registers 2
+
+    .line 0
+    new-instance v0, Lcom/facebook/common/dextricks/Prio$With;
+
+    .line 2
+    invoke-direct {v0, p0}, Lcom/facebook/common/dextricks/Prio$With;-><init>(Lcom/facebook/common/dextricks/Prio;)V
+
+    .line 5
+    return-object v0
+.end method
